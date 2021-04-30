@@ -1,7 +1,7 @@
 library(ranger)
 setwd("M:/EIPI3/Lasai/")
 source("Disenos de registro/Regresores.R")
-
+#Prueba
 dropvariables = c('numidest','CN02','CN03','CN04','CN05','cnaeest','obsanual1','obsanual2')
 regresoresRF1 <- regresores1[,(dropvariables):=NULL]
 
