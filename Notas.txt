@@ -1,0 +1,15 @@
+ESTA el año en el PID???
+
+
+En el resulta: SC IN los unicos que no estan
+Obsnchar sigue dando error en algunos casos
+
+actual <- Entra y hay 14 observaciones que estan solo en el PID y no en el FDE --> No los usamos para la imputacion
+
+NaN y NAs en los intermensuales porque no se pueden calcular o es 0 antes .
+
+Cuando es 0 se pone NaN
+Cuando no hay datos es NA
+
+
+Como usar los codigos de validez del PGR y FDE
