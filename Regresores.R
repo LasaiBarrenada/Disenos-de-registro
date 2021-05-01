@@ -4,7 +4,6 @@ setwd("M:/EIPI3/Lasai")
 library("xlsx") #openxlsx 
 library(VIM)
 
-
 source("Disenos de registro/Read.R") #lectura Datos
 source("Disenos de registro/CodeManagement.R") #CNAE 
 source('Disenos de registro/CNAEMIG.R') #Formateos YO
@@ -165,7 +164,7 @@ regresoresFinal <- merge.data.table(regresoresFinal,intermensual.merge, by.x = '
 unicosRegresores<- unique(regresoresFinal)
 
 unicosRegresores[,c("cnaeemp","provem","proves","codddpp","prioridp","codtame","acti","ccaa","imputar","cnaeemp3","cnaeemp2","cnaeemp1","cnaeest3","cnaeest2","cnaeest1","cnaeempMIG","cnaeempSub","cnaeestMIG","cnaeestSub","CAemp")] <- lapply(unicosRegresores[,c("cnaeemp","provem","proves","codddpp","prioridp","codtame","acti","ccaa","imputar","cnaeemp3","cnaeemp2","cnaeemp1","cnaeest3","cnaeest2","cnaeest1","cnaeempMIG","cnaeempSub","cnaeestMIG","cnaeestSub","CAemp")],as.factor) 
-unicosRegresores[,c('CN01','CN02','CN03','CN04','CN05')] <- lapply(unicosRegresores[,c('CN01.anterior','CN01','CN02','CN03','CN04','CN05')], as.numeric)
+unicosRegresores[,c("cn01.anterior",'CN01','CN02','CN03','CN04','CN05')] <- lapply(unicosRegresores[,c('cn01.anterior','CN01','CN02','CN03','CN04','CN05')], as.numeric)
 
 
 regresores1 <- unicosRegresores[envioPID == "01"]
@@ -182,7 +181,7 @@ NAmatch <- unicosRegresores[is.na(unicosRegresores$match.cnae4)]
  #Missing nchar porque son multybite
 NAintermensual <- unicosRegresores[is.na(unicosRegresores$intermensual.cn01)] #Hay muchos NANs pq seria 0 el periodo anterior
 
-r <- unicosRegresores[is.na(unicosRegresores$intermensual.cn01)]
+r <- unicosRegresores[is.na(unicosRegresores$interanual.cn01)]
 
 
 

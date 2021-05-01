@@ -1,4 +1,5 @@
 setwd("M:/EIPI3/Lasai")
+source('Disenos de registro/CNAEMIG.R') #Formateos YO
 
 library(devtools)
 library(fastReadfwf)
@@ -16,7 +17,8 @@ library(GGally)
 
 
 FDE <- as.data.table(read_sas("Nov20/fde1120.sas7bdat"))
-
+FDE <- codigovalidez(FDE)
+FDE <- FDE[validez == 'SI']
 #READ FDE
 
 files = list.files("fdes_19-20", full.names = T)
@@ -33,7 +35,8 @@ FDE_anteriores$cn03 <- ifelse(FDE_anteriores$cn03 == 0,1,FDE_anteriores$cn03)
 FDE_anteriores$cn04 <- ifelse(FDE_anteriores$cn04 == 0,1,FDE_anteriores$cn04)
 FDE_anteriores$cn05 <-ifelse(FDE_anteriores$cn05 == 0,1,FDE_anteriores$cn05)
 
-
+FDE_anteriores <- codigovalidez(FDE_anteriores)
+FDE_anteriores <- FDE_anteriores[validez == 'SI']
 # FDEs = lapply(files, read_sas)
 
 
@@ -102,3 +105,4 @@ fastReadfwf::validateValues(data_PGR_total, stSchema_PGR)
 
 # ggpairs(data_PGR_st, columns =  c(5,33,35)) #plot CNO and VE01 02
 # ggcorr(data_PGR_st)
+

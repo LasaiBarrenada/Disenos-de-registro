@@ -13,3 +13,7 @@ Cuando no hay datos es NA
 
 
 Como usar los codigos de validez del PGR y FDE
+
+
+
+Asterisco en vez de NA

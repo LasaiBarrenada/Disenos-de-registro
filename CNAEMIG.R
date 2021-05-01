@@ -184,3 +184,16 @@ provinciaToCCAA <- function(provincia){
   return(comunidad)
   
 }
+
+
+codigovalidez <- function(datatable)
+{
+  validos = c('1')
+  novalidos = c('0','3','4','9')
+  data = datatable
+  data[cn01a %in% validos, validez := 'SI'][
+    cn01a %in% novalidos, validez := "NO"
+  ]
+  data[is.na(validez), validez := 'SI']
+ return(data) 
+}
