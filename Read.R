@@ -58,21 +58,18 @@ dataFile_PID3 <- "Nov20/pid112003.txt"
 stSchema_PID <- fastReadfwf::xlsxToSchema(filenamePID, sheetname = 'Schema', lang = 'en')
 data_PID_st1 <- fastReadfwf::fread_fwf(dataFile_PID1, stSchema_PID, outFormat = 'data.table', convert = FALSE, perl = F, encoding = "Latin-1")
 data_PID_st1$envioPID <- "01"
-data_PID_st1 <- unique(data_PID_st1)
 
 data_PID_st2 <- fastReadfwf::fread_fwf(dataFile_PID2, stSchema_PID, outFormat = 'data.table', convert = FALSE, perl = F, encoding = "Latin-1")
 data_PID_st2$envioPID <- "02"
-data_PID_st2 <- unique(data_PID_st2)
 
 data_PID_st3 <- fastReadfwf::fread_fwf(dataFile_PID3, stSchema_PID, outFormat = 'data.table', convert = FALSE, perl = F, encoding = "Latin-1")
 data_PID_st3$envioPID <- "03"
-data_PID_st3 <- unique(data_PID_st3)
 
 data_PID_total <- rbind(data_PID_st1,data_PID_st2, data_PID_st3)
 
 
 
-# fastReadfwf::validateValues(data_PID_total, stSchema_PID)
+fastReadfwf::validateValues(data_PID_total, stSchema_PID)
 
 filenamePGR <- "Disenos de registro/ICNPGR_Schema.xlsx"
 dataFile_PGR1 <- "Nov20/pgr112001.txt"
