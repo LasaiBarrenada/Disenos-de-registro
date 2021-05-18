@@ -1,16 +1,16 @@
 # REGRESORES
 
 setwd("M:/EIPI3/Lasai")
-library("xlsx") #openxlsx 
+library("openxlsx") #openxlsx 
 library(VIM)
-
+library(tidyverse)
 source("Disenos de registro/Read.R") #lectura Datos
 source("Disenos de registro/CodeManagement.R") #CNAE 
-source('Disenos de registro/CNAEMIG.R') #Formateos YO
 
-regresores.fde.anterior <- FDE_anteriores[,list(numidest,periodo,acti,ccaa,cn01,cn02,cn03,cn04,cn05, month, year)]
+regresores.fde.anterior <- FDE_anteriores[,list(numidest,periodo,acti,ccaa,cn01,cn01a,cn01v,cn01e,cn02,cn02a,cn02v,cn02e,cn03,cn03a,cn03v,cn03e,cn04,cn04a,cn04v,cn04e,cn05, cn05a,cn05v,cn05e, month, year)]
 regresores.fde.anterior$month = month(regresores.fde.anterior$periodo)
 regresores.fde.anterior$year = year(regresores.fde.anterior$periodo)
+# regresores.fde <- regresores.fde.anterior[periodo == "2020-10-01", list(numidest,periodo,acti,ccaa,cn01,cn01a,cn01v,cn01e,cn02,cn02a,cn02v,cn02e,cn03,cn03a,cn03v,cn03e,cn04,cn04a,cn04v,cn04e,cn05, cn05a,cn05v,cn05e)]
 for (i in 1:length(names(regresores.fde.anterior))){
   names(regresores.fde.anterior)[i] = paste(names(regresores.fde.anterior)[i],'anterior', sep = ".")
 }
@@ -31,21 +31,69 @@ for (CNAE in CNAEs)
 
 regresores.fde.anterior <- merge.data.table(regresores.fde.anterior,newtable, by.x = c("periodo.anterior","acti.anterior"), by.y =c("periodo","acti"))
 
+regresores.fde.anterior <- regresores.fde.anterior[order(regresores.fde.anterior$periodo.anterior)]
+regresores.fde.anterior[, c("intermensual.cn01","intermensual.cn02",
+                            "intermensual.cn03", "intermensual.cn04",
+                            "intermensual.cn05" , "interanual.cn01",
+                            "interanual.cn02","interanual.cn03", 
+                            "interanual.cn04", "interanual.cn05") := list((cn01.anterior-shift(cn01.anterior))/shift(cn01.anterior),
+                                                                          (cn02.anterior-shift(cn02.anterior))/shift(cn02.anterior),
+                                                                          (cn03.anterior-shift(cn03.anterior))/shift(cn03.anterior),
+                                                                          (cn04.anterior-shift(cn04.anterior))/shift(cn04.anterior),
+                                                                          (cn05.anterior-shift(cn05.anterior))/shift(cn05.anterior),
+                                                                          (cn01.anterior-shift(cn01.anterior, n = 12))/shift(cn01.anterior, n = 12),   
+                                                                          (cn02.anterior-shift(cn02.anterior, n = 12))/shift(cn02.anterior, n = 12),
+                                                                          (cn03.anterior-shift(cn03.anterior, n = 12))/shift(cn03.anterior, n = 12),
+                                                                          (cn04.anterior-shift(cn04.anterior, n = 12))/shift(cn04.anterior, n = 12),
+                                                                          (cn05.anterior-shift(cn05.anterior, n = 12))/shift(cn05.anterior, n = 12)),
+                        by = numidest.anterior]
+
+
+# Asignar a cada numidest su intermensual e interanual
+month(regresores.fde.anterior$periodo.anterior[1])
+
+i = 1
+
+intermensual = data.table()
+mes = 11
+Ano = 2020
+intermensual = regresores.fde.anterior[ year.anterior == Ano & month.anterior == mes - 1]
+intermensual.merge <- intermensual[,list(numidest.anterior,ccaa.anterior,acti.anterior,cn01.anterior, cn01a.anterior,cn01v.anterior,cn01e.anterior, 
+                                         cn02.anterior, cn02a.anterior,cn02v.anterior,cn02e.anterior,
+                                         cn03.anterior, cn03a.anterior,cn03v.anterior,cn03e.anterior,
+                                         cn04.anterior, cn04a.anterior,cn04v.anterior,cn04e.anterior,
+                                         cn05.anterior, cn05a.anterior,cn05v.anterior,cn05e.anterior,
+                                         intermensual.cn01, 
+                                         intermensual.cn02,intermensual.cn03,
+                                         intermensual.cn04,intermensual.cn05,
+                                         interanual.cn01, 
+                                         interanual.cn02,interanual.cn03,
+                                         interanual.cn04,interanual.cn05,
+                                         intermensualCNAE,interanualCNAE)]
+
 
 regresores.PGR <- data_PGR_total[,list(NUMIDEST,CN01,CN02,CN03,CN04,CN05)]
-regresores.fde <- FDE[,list(numidest,acti,ccaa)]
+
+# regresores.fde <- FDE[,list(numidest,acti,ccaa,cn01a,cn01v,cn01e)]
 regresores.PID <- data_PID_total[,list(numidest,cnaeest,`cnaeemp `,provem,proves,codddpp,codtame,actual,obsanual1,obsanual2,prioridp,resulta, envioPID)]
 
 
 
-regresores <- merge.data.table(regresores.PID,regresores.fde,by = "numidest", all.x = T)
-
-regresores[is.na(acti)]$acti = regresores[is.na(acti)]$cnaeest
-regresores[is.na(ccaa)]$ccaa = provinciaToCCAA(regresores[is.na(ccaa)]$proves)
 # REPES
+
+r <- regresores.PID[duplicated(regresores.PID)] #334 registros duplicados
+r2 <- regresores.PID[duplicated(regresores.PID$numidest)] #2668 numidest repetidos
+
+#REGRESORES PID + FDE
+# regresores <- merge.data.table(regresores.PID,regresores.fde,by = "numidest", all.x = T)
+regresores <- merge.data.table(regresores.PID,intermensual.merge,by.x = 'numidest', by.y = 'numidest.anterior', all.x = T)
+regresores <- merge.data.table(regresores,regresores.PGR, by.x = "numidest",by.y = "NUMIDEST",all.x = T)
+
+regresores[is.na(acti.anterior)]$acti.anterior = regresores[is.na(acti.anterior)]$cnaeest
+regresores[is.na(ccaa.anterior)]$ccaa.anterior = provinciaToCCAA(regresores[is.na(ccaa.anterior)]$proves)
 names(regresores)[3] = 'cnaeemp'
-repes <- as.data.frame(regresores[duplicated(regresores$numidest)]) #Varios numidest repetidos
-numirepe <- unique(repes$numidest)
+
+#Regresores derivados
 
 # Resulta
 regresores$imputar <- resultacode(regresores$resulta)
@@ -109,62 +157,18 @@ regresores$obs <- ifelse(obs != " ",TRUE, FALSE)
 
 regresores$obs.nchar <- nchar(obs, allowNA = T) 
 
-
-regresoresFinal <- merge.data.table(regresores,regresores.PGR, by.x = "numidest", by.y = "NUMIDEST", all.x = T)
-
-regresoresFinal <- unique(regresoresFinal)
-
-regresoresFinal[regresoresFinal[is.na(acti)]]$acti = regresoresFinal[regresoresFinal[is.na(acti)]]$cnaeest
-
-regresores.fde.anterior <- regresores.fde.anterior[order(regresores.fde.anterior$periodo.anterior)]
-regresores.fde.anterior[, c("intermensual.cn01","intermensual.cn02","intermensual.cn03", "intermensual.cn04", "intermensual.cn05" , "interanual.cn01","interanual.cn02","interanual.cn03", "interanual.cn04", "interanual.cn05") := list((cn01.anterior-shift(cn01.anterior))/shift(cn01.anterior),
-                                                                             (cn02.anterior-shift(cn02.anterior))/shift(cn02.anterior),
-                                                                             (cn03.anterior-shift(cn03.anterior))/shift(cn03.anterior),
-                                                                             (cn04.anterior-shift(cn04.anterior))/shift(cn04.anterior),
-                                                                             (cn05.anterior-shift(cn05.anterior))/shift(cn05.anterior),
-                                                                             (cn01.anterior-shift(cn01.anterior, n = 12))/shift(cn01.anterior, n = 12),
-                                                                             (cn02.anterior-shift(cn02.anterior, n = 12))/shift(cn02.anterior, n = 12),
-                                                                             (cn03.anterior-shift(cn03.anterior, n = 12))/shift(cn03.anterior, n = 12),
-                                                                             (cn04.anterior-shift(cn04.anterior, n = 12))/shift(cn04.anterior, n = 12),
-                                                                             (cn05.anterior-shift(cn05.anterior, n = 12))/shift(cn05.anterior, n = 12)),
-                        by = numidest.anterior]
+regresores[,quartile:=.(quantile(cn01.anterior,probs = c(0.95),na.rm = T)), by = .(cnaeest2,ccaa.anterior)]
+regresores$treshold <- regresores$cn01.anterior > regresores$quartile
 
 
-# Asignar a cada numidest su intermensual e interanual
-month(regresores.fde.anterior$periodo.anterior[1])
-# regresoresFinal <- unique(regresoresFinal, by = 'numidest')
-i = 1
-intermensual = data.table()
-# for (numidest2 in regresoresFinal$numidest)
-# {
-#   
-Ano = 2020
-mes = 11
-#   
-#   estable = regresores.fde.anterior[numidest.anterior == numidest2 & year.anterior == Ano & month.anterior == mes - 1] 
-#   intermensual = rbind(intermensual,estable)
-#   anual = regresores.fde.anterior[numidest.anterior == numidest2 & year.anterior == Ano & month.anterior == mes-1]
-#   interanual = rbind(interanual,anual)
-#   i = i +1 
-# }
-intermensual = regresores.fde.anterior[ year.anterior == Ano & month.anterior == mes - 1]
-intermensual.merge <- intermensual[,list(numidest.anterior,cn01.anterior, intermensual.cn01, 
-                                         intermensual.cn02,intermensual.cn03,
-                                         intermensual.cn04,intermensual.cn05,
-                                         interanual.cn01, 
-                                         interanual.cn02,interanual.cn03,
-                                         interanual.cn04,interanual.cn05,
-                                         intermensualCNAE,interanualCNAE)]
-# interanual.merge <- interanual[,list(numidest.anterior,interanual.cn01, 
-                                     # interanual.cn02,interanual.cn03,
-                                     # interanual.cn04,interanual.cn05)]
-regresoresFinal <- merge.data.table(regresoresFinal,intermensual.merge, by.x = 'numidest', by.y = 'numidest.anterior', all.x = T)
-# regresoresFinal <- merge.data.table(regresoresFinal,interanual.merge, by.x = 'numidest', by.y = 'numidest.anterior')
+regresoresFinal <- unique(regresores)
+
+# regresoresFinal[regresoresFinal[is.na(acti)]]$acti = regresoresFinal[regresoresFinal[is.na(acti)]]$cnaeest
 
 unicosRegresores<- unique(regresoresFinal)
 
-unicosRegresores[,c("cnaeemp","provem","proves","codddpp","prioridp","codtame","acti","ccaa","imputar","cnaeemp3","cnaeemp2","cnaeemp1","cnaeest3","cnaeest2","cnaeest1","cnaeempMIG","cnaeempSub","cnaeestMIG","cnaeestSub","CAemp")] <- lapply(unicosRegresores[,c("cnaeemp","provem","proves","codddpp","prioridp","codtame","acti","ccaa","imputar","cnaeemp3","cnaeemp2","cnaeemp1","cnaeest3","cnaeest2","cnaeest1","cnaeempMIG","cnaeempSub","cnaeestMIG","cnaeestSub","CAemp")],as.factor) 
-unicosRegresores[,c("cn01.anterior",'CN01','CN02','CN03','CN04','CN05')] <- lapply(unicosRegresores[,c('cn01.anterior','CN01','CN02','CN03','CN04','CN05')], as.numeric)
+unicosRegresores[,c("cnaeemp","provem","proves","codddpp","prioridp","codtame","acti.anterior","ccaa.anterior","imputar","cnaeemp3","cnaeemp2","cnaeemp1","cnaeest3","cnaeest2","cnaeest1","cnaeempMIG","cnaeempSub","cnaeestMIG","cnaeestSub","CAemp")] <- lapply(unicosRegresores[,c("cnaeemp","provem","proves","codddpp","prioridp","codtame","acti.anterior","ccaa.anterior","imputar","cnaeemp3","cnaeemp2","cnaeemp1","cnaeest3","cnaeest2","cnaeest1","cnaeempMIG","cnaeempSub","cnaeestMIG","cnaeestSub","CAemp")],as.factor) 
+unicosRegresores[,c("CN01",'CN02','CN03','CN04','CN05',"cn01.anterior",'cn02.anterior','cn03.anterior','cn04.anterior','cn05.anterior')] <- lapply(unicosRegresores[,c("CN01",'CN02','CN03','CN04','CN05',"cn01.anterior",'cn02.anterior','cn03.anterior','cn04.anterior','cn05.anterior')], as.numeric)
 
 
 regresores1 <- unicosRegresores[envioPID == "01"]
@@ -176,12 +180,13 @@ aggr_plot <- aggr(unicosRegresores, col=c('navyblue','red'), numbers=TRUE, sortV
 aggr_plot$missings
 
 NAImputar <- unicosRegresores[is.na(unicosRegresores$imputar)] #SC e IN
-NA14actual <-unicosRegresores[is.na(ccaa)] #Nuevas entradas pueden ser 
+NA14actual <-unicosRegresores[is.na(ccaa.anterior)] #Nuevas entradas pueden ser 
 NAmatch <- unicosRegresores[is.na(unicosRegresores$match.cnae4)]
  #Missing nchar porque son multybite
 NAintermensual <- unicosRegresores[is.na(unicosRegresores$intermensual.cn01)] #Hay muchos NANs pq seria 0 el periodo anterior
 
-r <- unicosRegresores[is.na(unicosRegresores$interanual.cn01)]
+NAInteranual <- unicosRegresores[is.na(unicosRegresores$interanual.cn01)]
+
 
 
 

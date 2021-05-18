@@ -125,8 +125,8 @@ resultacode <- function(resulta){
   baja = c('DU','CD')
   cawi = c()
   auxDT <- data.table(resulta = resulta)[
-    resulta %in% imputa, imputar := '1'][
-      resulta %in% noimputa,imputar  := '0'][
+    resulta %in% imputa, imputar := 'Si'][
+      resulta %in% noimputa,imputar  := 'No'][
         resulta %in% imputa0, imputar := 'Cero'][
           resulta %in% baja, imputar := 'Baja'][
             resulta %in% cawi, imputar := 'Cawi'

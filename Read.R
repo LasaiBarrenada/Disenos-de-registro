@@ -8,14 +8,6 @@ library(data.table)
 library(GGally)
 #LECTURA DISEÃ‘O DE REGISTRO
 
-# Año <- readline(prompt = "Enter year: 20,21  ")
-# Mes <- readline(prompt = "Enter month and year e.g Sep, Oct, Nov:  ")
-# 
-# Mesnumero <- formatC(match(Mes,month.abb),width = 2,format = "d",flag = "0")
-# 
-# Envio <-  readline(prompt = "Numero de envio 01,02 or 03: ")
-
-
 FDE <- as.data.table(read_sas("Nov20/fde1120.sas7bdat"))
 FDE <- codigovalidez(FDE)
 FDE <- FDE[validez == 'SI']
@@ -34,18 +26,11 @@ FDE_anteriores$cn02 <-ifelse(FDE_anteriores$cn02 == 0,1,FDE_anteriores$cn02)
 FDE_anteriores$cn03 <- ifelse(FDE_anteriores$cn03 == 0,1,FDE_anteriores$cn03)
 FDE_anteriores$cn04 <- ifelse(FDE_anteriores$cn04 == 0,1,FDE_anteriores$cn04)
 FDE_anteriores$cn05 <-ifelse(FDE_anteriores$cn05 == 0,1,FDE_anteriores$cn05)
-
-FDE_anteriores <- codigovalidez(FDE_anteriores)
-FDE_anteriores <- FDE_anteriores[validez == 'SI']
+# 
+# FDE_anteriores <- codigovalidez(FDE_anteriores)
+# FDE_anteriores <- FDE_anteriores[validez == 'SI']
 # FDEs = lapply(files, read_sas)
 
-
-
-# Mesanterior <- month.abb[as.integer(Mesnumero)-1]
-# Mesnumeroanterior <- formatC(as.integer(Mesnumero)-1,width = 2,format = "d",flag = "0")
-# 
-# FDEanterior <- as.data.table(read_sas(paste(Mesanterior ,Año,"/fde",Mesnumeroanterior,Año,".sas7bdat", sep ="" )))
-# regresores.fde <- FDE[,list(numidest,acti,cn01,cn02,cn03,cn04,cn05,observa,ccaa)]
 
 
 
@@ -98,8 +83,4 @@ fastReadfwf::validateValues(data_PGR_total, stSchema_PGR)
 
 
 
-# data_PGR_st[,c(seq(from = 5, to = 35, by = 2))]<- lapply(data_PGR_st[,c(seq(from = 5, to = 35, by = 2))], as.numeric)
-
-# ggpairs(data_PGR_st, columns =  c(5,33,35)) #plot CNO and VE01 02
-# ggcorr(data_PGR_st)
 
