@@ -17,19 +17,22 @@ for (i in 1:length(names(regresores.fde.anterior))){
 
 # INTERMENSUAL E INTERANUAL
 CNCNAE <- FDE_anteriores[, .(sum(cn01)), by = .(periodo,acti)]
-CNAEs <- unique(CNCNAE$acti)
-newtable = data.table()
-for (CNAE in CNAEs)
-{
-  tabla <- CNCNAE[acti == CNAE]
-  tabla <- tabla[order(tabla$periodo)]
-  tabla[, intermensualCNAE := (V1-shift(V1))/shift(V1)]
-  tabla[, interanualCNAE := (V1-shift(V1,n = 12))/shift(V1, n = 12)]
-  newtable <- rbind(newtable,tabla)
-}
+regresores.fde.anterior <- regresores.fde.anterior[, sumacn01:=.(sum(cn01.anterior)), by = .(periodo.anterior,acti.anterior)]
+regresores.fde.anterior <- regresores.fde.anterior[,c('intermensualCNAE','interanualCNAE'):=list((sumacn01-shift(sumacn01))/shift(sumacn01),
+                                                                                   (sumacn01-shift(sumacn01,n = 12))/shift(sumacn01, n = 12))]
+# CNAEs <- unique(CNCNAE$acti)
+# newtable = data.table()
+# for (CNAE in CNAEs)
+# {
+#   tabla <- CNCNAE[acti == CNAE]
+#   tabla <- tabla[order(tabla$periodo)]
+#   tabla[, intermensualCNAE := (V1-shift(V1))/shift(V1)]
+#   tabla[, interanualCNAE := (V1-shift(V1,n = 12))/shift(V1, n = 12)]
+#   newtable <- rbind(newtable,tabla)
+# }
 
 
-regresores.fde.anterior <- merge.data.table(regresores.fde.anterior,newtable, by.x = c("periodo.anterior","acti.anterior"), by.y =c("periodo","acti"))
+# regresores.fde.anterior <- merge.data.table(regresores.fde.anterior,newtable, by.x = c("periodo.anterior","acti.anterior"), by.y =c("periodo","acti"))
 
 regresores.fde.anterior <- regresores.fde.anterior[order(regresores.fde.anterior$periodo.anterior)]
 regresores.fde.anterior[, c("intermensual.cn01","intermensual.cn02",
