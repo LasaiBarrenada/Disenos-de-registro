@@ -1,0 +1,34 @@
+DATA GRA2_;SET ENTRADA.FDE&MES&ANO; 
+DIVI=SUBSTR(ACTI,1,2);  
+GRUPO=SUBSTR(ACTI,1,3);  
+
+IF GRUPO='101' OR GRUPO='102' OR GRUPO='103' OR GRUPO='104' OR                  
+GRUPO='105' OR GRUPO='107' OR GRUPO='108' THEN DO GRUPO='10A';END;              
+IF GRUPO='106' OR GRUPO='109' THEN DO GRUPO='10B';END;                          
+IF GRUPO='131' OR GRUPO='132' OR GRUPO='133'                                    
+THEN DO GRUPO='13A';END;                                                        
+IF GRUPO='139' THEN DO GRUPO='13B';END;                                         
+IF GRUPO='204' THEN DO GRUPO='20A';END;                                         
+IF GRUPO='201' OR GRUPO='202' OR GRUPO='203' OR GRUPO='205'                     
+OR GRUPO='206' THEN DO GRUPO='20B';END;                                         
+IF GRUPO='251' OR GRUPO='252' OR GRUPO='253' OR GRUPO='254'                     
+THEN DO GRUPO='25A';END;                                                        
+IF GRUPO='255' OR GRUPO='256' OR GRUPO='257' OR GRUPO='259' THEN DO             
+GRUPO='25B';END;                                                                
+IF GRUPO='261' OR GRUPO='268' THEN DO GRUPO='26A';END;                          
+IF GRUPO='262' OR GRUPO='263' OR GRUPO='265' OR GRUPO='266'                     
+THEN DO GRUPO='26B';END;                                                        
+IF GRUPO='264' OR GRUPO='267' THEN DO GRUPO='26C';END;                          
+IF GRUPO='275' THEN DO GRUPO='27A';END;                                         
+IF GRUPO='271' OR GRUPO='272' OR GRUPO='273' OR GRUPO='274' OR                  
+GRUPO='279' THEN DO GRUPO='27B';END;                                            
+IF GRUPO='301' OR GRUPO='302' OR GRUPO='303' OR GRUPO='304'                                    
+THEN DO GRUPO='30A';END;                                                        
+IF GRUPO='309' THEN DO GRUPO='30B';END;                                         
+IF GRUPO='321' OR GRUPO='322' THEN DO GRUPO='32A';END;                          
+IF GRUPO='323' OR GRUPO='324' OR GRUPO='329' THEN DO GRUPO='32B';END;           
+IF GRUPO='325' THEN DO GRUPO='32C';END; 
+
+if substr(grupo,3,1) not in ("A","B","C") then GRUPO=DIVI;
+
+RUN;

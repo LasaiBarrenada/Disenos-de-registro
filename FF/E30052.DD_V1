@@ -1,0 +1,2956 @@
+<?xml version="1.0"?>
+<DD SurveyCode="E30052" version="1">
+  <identifiers>
+    <identifier identifierType="I">
+      <name>NOrden</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>11</Length>
+      <InFiles></InFiles>
+      <UnitNames>
+        <UnitName>norden</UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[0-9]{9}(T|[0-9])P</value>
+      </values>
+    </identifier>
+    <identifier identifierType="I">
+      <name>PondCCAA</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>2</Length>
+      <InFiles></InFiles>
+      <UnitNames>
+        <UnitName>pondccaa</UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[.]+</value>
+      </values>
+    </identifier>
+    <identifier identifierType="I">
+      <name>PondDivSubdivCNAE09</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>3</Length>
+      <InFiles></InFiles>
+      <UnitNames>
+        <UnitName>codigo</UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[.]+</value>
+      </values>
+    </identifier>
+    <identifier identifierType="Q">
+      <name>CalvarGestion</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>2</Length>
+      <InFiles></InFiles>
+      <UnitNames>
+        <UnitName></UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[A-Z]{2}</value>
+      </values>
+    </identifier>
+    <identifier identifierType="Q">
+      <name>Clasificacion</name>
+      <description>
+        <MetadataCode>716</MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>8</Length>
+      <InFiles></InFiles>
+      <UnitNames>
+        <UnitName></UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>([1-9]([0-9]+)?\.)+</value>
+      </values>
+    </identifier>
+    <identifier identifierType="Q">
+      <name>ElementoProceso</name>
+      <description>
+        <MetadataCode>714</MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>10</Length>
+      <InFiles>FF, FD, FG</InFiles>
+      <UnitNames>
+        <UnitName></UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>([1-9]([0-9]+)?\.)+</value>
+      </values>
+    </identifier>
+    <identifier identifierType="Q">
+      <name>EsModif</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>1</Length>
+      <InFiles></InFiles>
+      <UnitNames>
+        <UnitName></UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[01 ]</value>
+      </values>
+    </identifier>
+    <identifier identifierType="Q">
+      <name>EstadoWorkFlow</name>
+      <description>
+        <MetadataCode>719</MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>4</Length>
+      <InFiles></InFiles>
+      <UnitNames>
+        <UnitName></UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>([1-9]([0-9]+)?\.)+</value>
+      </values>
+    </identifier>
+    <identifier identifierType="Q">
+      <name>IDAux</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>11</Length>
+      <InFiles></InFiles>
+      <UnitNames>
+        <UnitName>IDAux</UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[0-9A-Z]{9,11}</value>
+      </values>
+    </identifier>
+    <identifier identifierType="Q">
+      <name>IDEdit</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>15</Length>
+      <InFiles></InFiles>
+      <UnitNames>
+        <UnitName>NombreEdit</UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[.]+</value>
+      </values>
+    </identifier>
+    <identifier identifierType="Q">
+      <name>NumCorrel</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>3</Length>
+      <InFiles></InFiles>
+      <UnitNames>
+        <UnitName></UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[1-9][0-9]?</value>
+      </values>
+    </identifier>
+    <identifier identifierType="Q">
+      <name>PondAgreg</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>8</Length>
+      <InFiles></InFiles>
+      <UnitNames>
+        <UnitName></UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[.]+</value>
+      </values>
+    </identifier>
+    <identifier identifierType="Q">
+      <name>RelacionUnidadMuestral</name>
+      <description>
+        <MetadataCode>718</MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>6</Length>
+      <InFiles></InFiles>
+      <UnitNames>
+        <UnitName></UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>([1-9]([0-9]+)?\.)+</value>
+      </values>
+    </identifier>
+    <identifier identifierType="Q">
+      <name>RolProceso</name>
+      <description>
+        <MetadataCode>715</MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>6</Length>
+      <InFiles></InFiles>
+      <UnitNames>
+        <UnitName></UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>([1-9]([0-9]+)?\.)+</value>
+      </values>
+    </identifier>
+    <identifier identifierType="Q">
+      <name>TareaProceso</name>
+      <description>
+        <MetadataCode>713</MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>10</Length>
+      <InFiles></InFiles>
+      <UnitNames>
+        <UnitName></UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>([1-9]([0-9]+)?\.)+</value>
+      </values>
+    </identifier>
+    <identifier identifierType="Q">
+      <name>TipoFecha</name>
+      <description>
+        <MetadataCode>717</MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>6</Length>
+      <InFiles></InFiles>
+      <UnitNames>
+        <UnitName></UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>([1-9]([0-9]+)?\.)+</value>
+      </values>
+    </identifier>
+    <identifier identifierType="Q">
+      <name>TipoMercado</name>
+      <description>
+        <MetadataCode>680</MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>6</Length>
+      <InFiles>FF, FD, FG</InFiles>
+      <UnitNames>
+        <UnitName></UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>([1-9]([0-9]+)?\.)+</value>
+      </values>
+    </identifier>
+    <identifier identifierType="Q">
+      <name>TipoMicrodato</name>
+      <description>
+        <MetadataCode>711</MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>3</Length>
+      <InFiles></InFiles>
+      <UnitNames>
+        <UnitName></UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>([0-9]([0-9]+)?\.)+</value>
+      </values>
+    </identifier>
+    <identifier identifierType="Q">
+      <name>Total</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>26</Length>
+      <InFiles>FF, FD, FG</InFiles>
+      <UnitNames>
+        <UnitName></UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[.]+</value>
+      </values>
+    </identifier>
+    <identifier identifierType="Q">
+      <name>Usuario</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>7</Length>
+      <InFiles></InFiles>
+      <UnitNames>
+        <UnitName>Usuario</UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>U[0-9]{6}</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>ActivEcono</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>5</Length>
+      <InFiles>FF,FD,FG</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">TareaProceso</qual>
+        <qual QualOrder="4">RolProceso</qual>
+        <qual QualOrder="5">Clasificacion</qual>
+        <qual QualOrder="6">EsModif</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="2." RolProceso="2.1.1." Clasificacion="2.1.4." EsModif="" InFiles="FF,FD,FG">
+          <name>CodCNAE</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="2." RolProceso="2.1.2." Clasificacion="2.1.4." EsModif="" InFiles="FF,FD,FG">
+          <name>CodCNAEEst</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="4." RolProceso="2.1.2." Clasificacion="2.1.4." EsModif="0" InFiles="FF,FD,FG">
+          <name>CNAE_URCE</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="4." RolProceso="2.1.2." Clasificacion="2.1.4." EsModif="1" InFiles="FF,FD,FG">
+          <name>cnae09_urce_modif</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="6." RolProceso="2.1.2." Clasificacion="2.1.4." EsModif="" InFiles="FF">
+          <name>acti</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="2.1.2." Clasificacion="2.1.4." EsModif="" InFiles="FF, FD, FG">
+          <name>DescActivEcono</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>( |[0-9]{4})</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>ActivEconoAux</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>5</Length>
+      <InFiles>FP</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">RelacionUnidadMuestral</qual>
+        <qual QualOrder="4">Clasificacion</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="35." Clasificacion="2.1.4." RelacionUnidadMuestral="11." InFiles="FP">
+          <name>nifCambioFactoresCNAE</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR3</table_column>
+            <filter>ECIN_VARIABLE ='CAMBIOFACTORES'</filter>
+            <function>##PUT @1 'ActivEconoAux@@' @16 UME_NUMERO_ORDEN  @27'35.' @30'11.   ' @36'2.1.4.  ' @44</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." Clasificacion="2.1.4." RelacionUnidadMuestral="10." InFiles="FP">
+          <name>ErroneamenteIncluidoCNAE</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR1</table_column>
+            <filter>ECIN_VARIABLE ='ERRONEAMENTEINCLUIDO'</filter>
+            <function>##PUT @1 'ActivEconoAux@@' @16 UME_NUMERO_ORDEN  @27'35.' @30'10.   ' @36'2.1.4.  ' @44</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." Clasificacion="" RelacionUnidadMuestral="11." InFiles="FP">
+          <name>nifCambioFactoresDescACTI</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR4</table_column>
+            <filter>ECIN_VARIABLE ='CAMBIOFACTORES'</filter>
+            <function>##PUT @1 'ActivEconoAux@@' @16 UME_NUMERO_ORDEN  @27'06.' @30'11.   ' @44</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." Clasificacion="" RelacionUnidadMuestral="10." InFiles="FP">
+          <name>ErroneamenteIncluidoDescACTI</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR2</table_column>
+            <filter>ECIN_VARIABLE ='ERRONEAMENTEINCLUIDO'</filter>
+            <function>##PUT @1 'ActivEconoAux@@' @16 UME_NUMERO_ORDEN  @27'06.' @30'10.   ' @44</function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>( |[0-9]{4})</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>Agente</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>7</Length>
+      <InFiles>FP</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">RolProceso</qual>
+        <qual QualOrder="4">NumCorrel</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="35." RolProceso="4.1." NumCorrel=".." InFiles="FP">
+          <name>CodAgente_[n]</name>
+          <questionIria>
+            <table_column>GESTIONES_USUARIOS_MERE.GEUS_USUI_ID</table_column>
+            <filter>ROL_NOMBRE LIKE '%Entrevistador%'</filter>
+            <function>##PUT @1 'Agente@@' @9 UME_NUMERO_ORDEN  @20'35.' @23'4.1.  ' @29</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." RolProceso="4.2." NumCorrel=".." InFiles="FP">
+          <name>CodInspector_[n]</name>
+          <questionIria>
+            <table_column>GESTIONES_USUARIOS_MERE.GEUS_USUI_ID</table_column>
+            <filter>ROL_NOMBRE LIKE '%Inspector%'</filter>
+            <function>##PUT @1 'Agente@@' @9 UME_NUMERO_ORDEN  @20'35.' @23'4.2.  ' @29</function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[.]+</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>Apellido</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>25</Length>
+      <InFiles>FI</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">TareaProceso</qual>
+        <qual QualOrder="4">RolProceso</qual>
+        <qual QualOrder="5">NumCorrel</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="4.3.1." NumCorrel="1" InFiles="FI">
+          <name>Apellido1InforEnt</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_APELLIDO1</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="4.3.2." NumCorrel="1" InFiles="FI">
+          <name>Apellido1InforEnv</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_APELLIDO1</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="4.3.1." NumCorrel="2" InFiles="FI">
+          <name>Apellido2InforEnt</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_APELLIDO2</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="4.3.2." NumCorrel="2" InFiles="FI">
+          <name>Apellido2InforEnv</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_APELLIDO2</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="4.3.3." NumCorrel="1" InFiles="FI">
+          <name>Apellido1InforGestoria</name>
+          <questionIria>
+            <table_column>UME_GESTORIAS_ECONOMICAS.UMGE_APELLIDO1</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="4.3.3." NumCorrel="2" InFiles="FI">
+          <name>Apellido2InforGestoria</name>
+          <questionIria>
+            <table_column>UME_GESTORIAS_ECONOMICAS.UMGE_APELLIDO2</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="4.3.4." NumCorrel="1" InFiles="FI">
+          <name>Apellido1InforCoor</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_APELLIDO1</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="4.3.4." NumCorrel="2" InFiles="FI">
+          <name>Apellido2InforCoor</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_APELLIDO2</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[.]{50}</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>CanalRecogida</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>6</Length>
+      <InFiles>FP</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="06." InFiles="FP">
+          <name>canal</name>
+          <questionIria>
+            <table_column>CANALES_ENTRADAS.MERE_COD</table_column>
+            <filter></filter>
+            <function>##PUT @1 'CanalRecogida@@' @16 UME_NUMERO_ORDEN  @27'06.' @30</function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[.]+</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>Cargo</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>100</Length>
+      <InFiles>FI</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">TareaProceso</qual>
+        <qual QualOrder="4">RolProceso</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="4.3.1." InFiles="FI">
+          <name>CargoInforEnt</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_CARGO</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="4.3.2." InFiles="FI">
+          <name>CargoInforEnv</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_CARGO</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="4.3.3." InFiles="FI">
+          <name>CargoInfoGestoria</name>
+          <questionIria>
+            <table_column>UME_GESTORIAS_ECONOMICAS.UMGE_CARGO</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="4.3.4." InFiles="FI">
+          <name>CargoInforCoor</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_CARGO</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[.]{100}</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>CifraNeg</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>NUMBER</varType>
+      <Length>11</Length>
+      <InFiles>FF, FD, FG</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">TareaProceso</qual>
+        <qual QualOrder="4">TipoMercado</qual>
+        <qual QualOrder="5">Total</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." TipoMercado="" Total="680:1.-2." InFiles="FF, FD, FG">
+          <name>cn01</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." TipoMercado="1." Total="" InFiles="FF, FD, FG">
+          <name>cn02</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." TipoMercado="2.1.1." Total="" InFiles="FF, FD, FG">
+          <name>cn03</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." TipoMercado="2.1.2." Total="" InFiles="FF, FD, FG">
+          <name>cn04</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." TipoMercado="2.2." Total="" InFiles="FF, FD, FG">
+          <name>cn05</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>( |[0-9]{1,9})</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>Codigo</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>1</Length>
+      <InFiles>FF</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">TareaProceso</qual>
+        <qual QualOrder="4">ElementoProceso</qual>
+        <qual QualOrder="5">RolProceso</qual>
+        <qual QualOrder="6">TipoMercado</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="05." TareaProceso="6." RolProceso="6." ElementoProceso="5.3.1.2." TipoMercado="" InFiles="FF">
+          <name>cn01a</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="05." TareaProceso="6." RolProceso="6." ElementoProceso="5.3.1.1." TipoMercado="" InFiles="FF">
+          <name>cn01v</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="05." TareaProceso="6." RolProceso="6." ElementoProceso="5.3.1.3." TipoMercado="" InFiles="FF">
+          <name>cn01e</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="05." TareaProceso="6." RolProceso="6." ElementoProceso="5.3.1.2." TipoMercado="1." InFiles="FF">
+          <name>cn02a</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="05." TareaProceso="6." RolProceso="6." ElementoProceso="5.3.1.1." TipoMercado="1." InFiles="FF">
+          <name>cn02v</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="05." TareaProceso="6." RolProceso="6." ElementoProceso="5.3.1.3." TipoMercado="1." InFiles="FF">
+          <name>cn02e</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="05." TareaProceso="6." RolProceso="6." ElementoProceso="5.3.1.2." TipoMercado="2.1.1." InFiles="FF">
+          <name>cn03a</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="05." TareaProceso="6." RolProceso="6." ElementoProceso="5.3.1.1." TipoMercado="2.1.1." InFiles="FF">
+          <name>cn03v</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="05." TareaProceso="6." RolProceso="6." ElementoProceso="5.3.1.3." TipoMercado="2.1.1." InFiles="FF">
+          <name>cn03e</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="05." TareaProceso="6." RolProceso="6." ElementoProceso="5.3.1.2." TipoMercado="2.1.2." InFiles="FF">
+          <name>cn04a</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="05." TareaProceso="6." RolProceso="6." ElementoProceso="5.3.1.1." TipoMercado="2.1.2." InFiles="FF">
+          <name>cn04v</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="05." TareaProceso="6." RolProceso="6." ElementoProceso="5.3.1.3." TipoMercado="2.1.2." InFiles="FF">
+          <name>cn04e</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="05." TareaProceso="6." RolProceso="6." ElementoProceso="5.3.1.2." TipoMercado="2.2." InFiles="FF">
+          <name>cn05a</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="05." TareaProceso="6." RolProceso="6." ElementoProceso="5.3.1.1." TipoMercado="2.2." InFiles="FF">
+          <name>cn05v</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="05." TareaProceso="6." RolProceso="6." ElementoProceso="5.3.1.3." TipoMercado="2.2." InFiles="FF">
+          <name>cn05e</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[0-9]</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>Contador</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>NUMBER</varType>
+      <Length>3</Length>
+      <InFiles>FP</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">TareaProceso</qual>
+        <qual QualOrder="4">ElementoProceso</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="5." ElementoProceso="" InFiles="FP">
+          <name>NAccionesDepuracion</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4.4.1.1." ElementoProceso="" InFiles="FP">
+          <name>NInspeccionRechazos</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4.4.2.1." ElementoProceso="" InFiles="FP">
+          <name>NInspeccionRechazosDepSelectiva</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4.6.1.1." ElementoProceso="" InFiles="FP">
+          <name>NSupervisionRechazos</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4.6.2.1" ElementoProceso="" InFiles="FP">
+          <name>NSupervisionRechazosDepSelectiva</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4.1.3.1." ElementoProceso="" InFiles="FP">
+          <name>NdevueltoCorreo</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4.1.2." ElementoProceso="" InFiles="FP">
+          <name>NCuestionariosRemitidos</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4.5.1." ElementoProceso="" InFiles="FP">
+          <name>NllamadasReclamacion</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="" ElementoProceso="5.1.2.1." InFiles="FP">
+          <name>NErroresPrimeraDepuracion</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="" ElementoProceso="5.1.2.2." InFiles="FP">
+          <name>NErroresUltimaDepuracion</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4.1.4." ElementoProceso="" InFiles="FP">
+          <name>NllamadasTelErroneo</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>( |[0-9]{1,2})</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>Email</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>100</Length>
+      <InFiles>FI</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">TareaProceso</qual>
+        <qual QualOrder="4">RolProceso</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="4.3.1." InFiles="FI">
+          <name>emailInforEnt</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_EMAIL</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="4.3.2." InFiles="FI">
+          <name>emailInforEnv</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_EMAIL</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="4.3.3." InFiles="FI">
+          <name>emailInforGestoria</name>
+          <questionIria>
+            <table_column>UME_GESTORIAS_ECONOMICAS.UMGE_EMAIL</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="4.3.4." InFiles="FI">
+          <name>emailInforCoor</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_EMAIL</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[.]{100}</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>EstadoWF</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>40</Length>
+      <InFiles>FP</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">EstadoWorkFlow</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="06." EstadoWorkFlow="1." InFiles="FP">
+          <name>WFPrincipalEstado</name>
+          <questionIria>
+            <table_column>ESTADOS_WORKFLOWS.ESWF_COD</table_column>
+            <filter>CLWR_COD='PRINCIPAL'</filter>
+            <function>CLWR_COD##PUT @1 'EstadoWF@@' @11 UME_NUMERO_ORDEN  @22'06.' @25'1.  ' @29</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." EstadoWorkFlow="2." InFiles="FP">
+          <name>WFRecogidaEstado</name>
+          <questionIria>
+            <table_column>ESTADOS_WORKFLOWS.ESWF_COD</table_column>
+            <filter>CLWR_COD='RECOGIDA'</filter>
+            <function>CLWR_COD##PUT @1 'EstadoWF@@' @11 UME_NUMERO_ORDEN  @22'06.' @25'2.  ' @29</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." EstadoWorkFlow="3." InFiles="FP">
+          <name>WFDepuracion_SelectivaEstado</name>
+          <questionIria>
+            <table_column>ESTADOS_WORKFLOWS.ESWF_COD</table_column>
+            <filter>CLWR_COD='DEPURACION_SELECTIVA'</filter>
+            <function>CLWR_COD##PUT @1 'EstadoWF@@' @11 UME_NUMERO_ORDEN  @22'06.' @25'3.  ' @29</function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[ |P|I|DS]</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>Expdte</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>10</Length>
+      <InFiles>FP</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="06." InFiles="FP">
+          <name>Expediente</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[.]+</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>Fax</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>9</Length>
+      <InFiles>FI</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">TareaProceso</qual>
+        <qual QualOrder="4">RolProceso</qual>
+        <qual QualOrder="5">EsModif</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." RolProceso="2.1." EsModif="0" InFiles="FI">
+          <name>fax1</name>
+          <questionIria>
+            <table_column>UM_INTERLOCUTORES_ECONOMICAS.UMIE_FAX</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." RolProceso="2.1." EsModif="1" InFiles="FI">
+          <name>fax1_modif</name>
+          <questionIria>
+            <table_column>UME_MODIFICACIONES.UMGE_VALOR_NUEVO</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." RolProceso="4.3.1." EsModif="" InFiles="FI">
+          <name>faxInforEnt</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_FAX</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." RolProceso="4.3.2." EsModif="" InFiles="FI">
+          <name>faxInforEnv</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_FAX</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." RolProceso="4.3.3." EsModif="" InFiles="FI">
+          <name>faxInforGestoria</name>
+          <questionIria>
+            <table_column>UME_GESTORIAS_ECONOMICAS.UMGE_FAX</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." RolProceso="4.3.4." EsModif="" InFiles="FI">
+          <name>faxInforCoor</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_FAX</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[69][0-9]{8}</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>Fecha</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>10</Length>
+      <InFiles>FP</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">TipoFecha</qual>
+        <qual QualOrder="4">RelacionUnidadMuestral</qual>
+        <qual QualOrder="5">TareaProceso</qual>
+        <qual QualOrder="6">CalvarGestion</qual>
+        <qual QualOrder="7">NumCorrel</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="4.2." NumCorrel="" TipoFecha="2." RelacionUnidadMuestral="" CalvarGestion="" InFiles="FP">
+          <name>fechaRecepcion</name>
+          <questionIria>
+            <table_column>GESTIONES_UME_CUES_CAWI.GUMW_FECHA_ACCESO</table_column>
+            <filter></filter>
+            <function>##PUT @1 'Fecha@@' @8 UME_NUMERO_ORDEN  @19'37.' @22'2.    ' @34'4.2.      ' @49</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="4.3." NumCorrel="" TipoFecha="2." RelacionUnidadMuestral="" CalvarGestion="" InFiles="FP">
+          <name>fechaGrabacion</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="5." NumCorrel="" TipoFecha="2." RelacionUnidadMuestral="" CalvarGestion="" InFiles="FP">
+          <name>fechaDepuracion</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="4.5.1." NumCorrel=".." TipoFecha="2." RelacionUnidadMuestral="" CalvarGestion="" InFiles="FP">
+          <name>fechaLlamadaReclamacion_[n]</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="5.1.2.1.1." NumCorrel=".." TipoFecha="2." RelacionUnidadMuestral="" CalvarGestion="" InFiles="FP">
+          <name>fechallamadaDepuracion_[n]</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="4.1.1." NumCorrel="" TipoFecha="2." RelacionUnidadMuestral="" CalvarGestion="" InFiles="FP">
+          <name>FechaAperturaCAWI</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="4.4.1." NumCorrel="" TipoFecha="2." RelacionUnidadMuestral="" CalvarGestion="" InFiles="FP">
+          <name>fechaInspeccion</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="4.4.2." NumCorrel="" TipoFecha="2." RelacionUnidadMuestral="" CalvarGestion="" InFiles="FP">
+          <name>fechaInspeccionDepSelectiva</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="4.6.1." NumCorrel="" TipoFecha="2." RelacionUnidadMuestral="" CalvarGestion="" InFiles="FP">
+          <name>fechaSupervision</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="4.6.2." NumCorrel="" TipoFecha="2." RelacionUnidadMuestral="" CalvarGestion="" InFiles="FP">
+          <name>fechaSupervisionDepSelectiva</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="" NumCorrel="" TipoFecha="3.1." RelacionUnidadMuestral="" CalvarGestion=".." InFiles="FP">
+          <name>fechaGestion_[varGestion]</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="" NumCorrel="" TipoFecha="1.1." RelacionUnidadMuestral="1.1.1." CalvarGestion="" InFiles="FP">
+          <name>NifFusionEfectoContable</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR4</table_column>
+            <filter>ECIN_VARIABLE ='NIFFUSION'</filter>
+            <function>##PUT @1 'Fecha@@' @8 UME_NUMERO_ORDEN  @19'37.' @22'1.1.  ' @28'1.1.1.' @49</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="" NumCorrel="" TipoFecha="1.1." RelacionUnidadMuestral="1.1.2." CalvarGestion="" InFiles="FP">
+          <name>NifFusionEscritura</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR5</table_column>
+            <filter>ECIN_VARIABLE ='NIFFUSION'</filter>
+            <function>##PUT @1 'Fecha@@' @8 UME_NUMERO_ORDEN  @19'37.' @22'1.1.  ' @28'1.1.2.' @49</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="" NumCorrel="" TipoFecha="1.1." RelacionUnidadMuestral="2.1.1." CalvarGestion="" InFiles="FP">
+          <name>NifAbsorbenteEfectoContable</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR4</table_column>
+            <filter>ECIN_VARIABLE ='NIFABSORBENTE'</filter>
+            <function>##PUT @1 'Fecha@@' @8 UME_NUMERO_ORDEN  @19'37.' @22'1.1.  ' @28'2.1.1.' @49</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="" NumCorrel="" TipoFecha="1.1." RelacionUnidadMuestral="2.1.2." CalvarGestion="" InFiles="FP">
+          <name>NifAbsorbenteEscritura</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR5</table_column>
+            <filter>ECIN_VARIABLE ='NIFABSORBENTE'</filter>
+            <function>##PUT @1 'Fecha@@' @8 UME_NUMERO_ORDEN  @19'37.' @22'1.1.  ' @28'2.1.2.' @49</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="" NumCorrel="" TipoFecha="1.1." RelacionUnidadMuestral="3.1." CalvarGestion="" InFiles="FP">
+          <name>EscisionEfectoContable</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR1</table_column>
+            <filter>ECIN_VARIABLE ='ESCISION'</filter>
+            <function>##PUT @1 'Fecha@@' @8 UME_NUMERO_ORDEN  @19'37.' @22'1.1.  ' @28'3.1.  ' @49</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="" NumCorrel="" TipoFecha="1.1." RelacionUnidadMuestral="3.2." CalvarGestion="" InFiles="FP">
+          <name>EscisionEscritura</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR2</table_column>
+            <filter>ECIN_VARIABLE ='ESCISION'</filter>
+            <function>##PUT @1 'Fecha@@' @8 UME_NUMERO_ORDEN  @19'37.' @22'1.1.  ' @28'3.2.  ' @49</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="" NumCorrel="" TipoFecha="1.1." RelacionUnidadMuestral="11." CalvarGestion="" InFiles="FP">
+          <name>nifCambioFactoresFecha</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR5</table_column>
+            <filter>ECIN_VARIABLE ='CAMBIOFACTORES'</filter>
+            <function>##PUT @1 'Fecha@@' @8 UME_NUMERO_ORDEN  @19'37.' @22'1.1.  ' @28'11.   ' @49</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="" NumCorrel="" TipoFecha="1.1." RelacionUnidadMuestral="4.1." CalvarGestion="" InFiles="FP">
+          <name>InactividadDesde</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR1</table_column>
+            <filter>ECIN_VARIABLE ='INACTIVIDAD'</filter>
+            <function>##PUT @1 'Fecha@@' @8 UME_NUMERO_ORDEN  @19'37.' @22'1.1.  ' @28'4.1.  ' @49</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="" NumCorrel="" TipoFecha="1.1." RelacionUnidadMuestral="4.2." CalvarGestion="" InFiles="FP">
+          <name>InactividadHasta</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR2</table_column>
+            <filter>ECIN_VARIABLE ='INACTIVIDAD'</filter>
+            <function>##PUT @1 'Fecha@@' @8 UME_NUMERO_ORDEN  @19'37.' @22'1.1.  ' @28'4.2.  ' @49</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="" NumCorrel="" TipoFecha="1.2.1." RelacionUnidadMuestral="" CalvarGestion="" InFiles="FP">
+          <name>FechaefectobajaFutura</name>
+          <questionIria>
+            <table_column>BAJAS_UM.BAUM_FEC_EFECTOS</table_column>
+            <filter>BAUM_FUTURA='1' AND BAUM_ESTADO='A'</filter>
+            <function>##PUT @1 'Fecha@@' @8 UME_NUMERO_ORDEN  @19'37.' @22'1.2.1.' @49</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="" NumCorrel="" TipoFecha="1.2.2." RelacionUnidadMuestral="" CalvarGestion="" InFiles="FP">
+          <name>FechahastabajaFutura</name>
+          <questionIria>
+            <table_column>BAJAS_UM.BAUM_FEC_HASTA</table_column>
+            <filter>BAUM_FUTURA='1' AND BAUM_ESTADO='A'</filter>
+            <function>##PUT @1 'Fecha@@' @8 UME_NUMERO_ORDEN  @19'37.' @22'1.2.2.' @49</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="4.1." NumCorrel=".." TipoFecha="2." RelacionUnidadMuestral="" CalvarGestion="" InFiles="FP">
+          <name>fechaEjecucionEnvio_[n]</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="" NumCorrel="" TipoFecha="1.1." RelacionUnidadMuestral="5.1." CalvarGestion="" InFiles="FP">
+          <name>FechaEfectoCierreDefinit</name>
+          <questionIria>
+            <table_column>BAJAS_UM.BAUM_FEC_EFECTOS</table_column>
+            <filter>BAUM_FUTURA='0' AND BAUM_ESTADO='A'</filter>
+            <function>##PUT @1 'Fecha@@' @8 UME_NUMERO_ORDEN  @19'37.' @22'1.1.  ' @28'5.1.  ' @49</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="" NumCorrel="" TipoFecha="1.1." RelacionUnidadMuestral="5.2." CalvarGestion="" InFiles="FP">
+          <name>FechaHastaCierreDefinit</name>
+          <questionIria>
+            <table_column>BAJAS_UM.BAUM_FEC_HASTA</table_column>
+            <filter>BAUM_FUTURA='0' AND BAUM_ESTADO='A'</filter>
+            <function>##PUT @1 'Fecha@@' @8 UME_NUMERO_ORDEN  @19'37.' @22'1.1.  ' @28'5.2.  ' @49</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="" NumCorrel="" TipoFecha="1.1.5." RelacionUnidadMuestral="" CalvarGestion="" InFiles="FP">
+          <name>FechaAltaMuestra</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="" NumCorrel="" TipoFecha="1.1.3." RelacionUnidadMuestral="" CalvarGestion="" InFiles="FP">
+          <name>FechaBajaMuestra</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="37." TareaProceso="6." NumCorrel="" TipoFecha="2." RelacionUnidadMuestral="" CalvarGestion="" InFiles="FF">
+          <name>fentra</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>( |([0-9]{2}/[0-9]{2}/[0-9]{4}))</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>Flag</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>1</Length>
+      <InFiles>FP</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">RelacionUnidadMuestral</qual>
+        <qual QualOrder="4">TareaProceso</qual>
+        <qual QualOrder="5">ElementoProceso</qual>
+        <qual QualOrder="6">NumCorrel</qual>
+        <qual QualOrder="7">IDEdit</qual>
+        <qual QualOrder="8">IDAux</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="04." TareaProceso="4.4." NumCorrel="" ElementoProceso="" RelacionUnidadMuestral="" IDEdit="" IDAux="" InFiles="FP">
+          <name>inspeccion</name>
+          <questionIria>
+            <table_column>WORKFLOWS_VARIABLES.WFVA_STRING</table_column>
+            <filter>WFVA_VARIABLE = 'GLB_INSPECCIONADO'</filter>
+            <function>##PUT @1 'Flag@@' @7 UME_NUMERO_ORDEN  @18'04.' @27'4.4.      ' @76</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="04." TareaProceso="2.1." NumCorrel="" ElementoProceso="2.1.1.1." RelacionUnidadMuestral="" IDEdit="" IDAux="" InFiles="FP">
+          <name>TelefonoErroneo</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="04." TareaProceso="4.1.1." NumCorrel="" ElementoProceso="" RelacionUnidadMuestral="" IDEdit="" IDAux="" InFiles="FP">
+          <name>AperturaCAWI</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="04." TareaProceso="" NumCorrel="" ElementoProceso="" RelacionUnidadMuestral="7.1." IDEdit="" IDAux="" InFiles="FP">
+          <name>NordenRecogeDatosMuestra</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR2</table_column>
+            <filter>ECIN_VARIABLE ='NORDENRECOGEDATOS '</filter>
+            <function>##PUT @1 'Flag@@' @7 UME_NUMERO_ORDEN  @18'04.' @21'7.1.  ' @76</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="04." TareaProceso="" NumCorrel="" ElementoProceso="" RelacionUnidadMuestral="7.2." IDEdit="" IDAux="" InFiles="FP">
+          <name>NifRecogeDatosMuestra</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR2</table_column>
+            <filter>ECIN_VARIABLE ='NIFRECOGEDATOS'</filter>
+            <function>##PUT @1 'Flag@@' @7 UME_NUMERO_ORDEN  @18'04.' @21'7.2.  ' @76</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="04." TareaProceso="" NumCorrel=".." ElementoProceso="" RelacionUnidadMuestral="6.1." IDEdit="" IDAux="." InFiles="FP">
+          <name>NordenCuestionarioenOtroMuestra_[n]</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR2</table_column>
+            <filter>ECIN_VARIABLE ='NORDENCUESTIONARIOENOTRO'</filter>
+            <function>NumCorrel Ecin_valor1##PUT @1 'Flag@@' @7 UME_NUMERO_ORDEN  @18'04.' @21'6.1.  ' @47 NumCorrel  @65 Ecin_valor1  @76</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="04." TareaProceso="" NumCorrel=".." ElementoProceso="" RelacionUnidadMuestral="6.2." IDEdit="" IDAux="." InFiles="FP">
+          <name>NifCuestionarioenOtroMuestra_[n]</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR2</table_column>
+            <filter>ECIN_VARIABLE ='CIFCUESTIONAROENOTRO'</filter>
+            <function>NumCorrel Ecin_valor1##PUT @1 'Flag@@' @7 UME_NUMERO_ORDEN  @18'04.' @21'6.2.  ' @47 NumCorrel  @65 Ecin_valor1  @76</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="04." TareaProceso="" NumCorrel="" ElementoProceso="" RelacionUnidadMuestral="1.1.3." IDEdit="" IDAux="" InFiles="FP">
+          <name>NifFusionMuestra</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR3</table_column>
+            <filter>ECIN_VARIABLE ='NIFFUSION'</filter>
+            <function>##PUT @1 'Flag@@' @7 UME_NUMERO_ORDEN  @18'04.' @21'1.1.3.' @76</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="04." TareaProceso="" NumCorrel="" ElementoProceso="" RelacionUnidadMuestral="1.2.1." IDEdit="" IDAux="." InFiles="FP">
+          <name>NifFusionadoMuestra</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR3</table_column>
+            <filter>ECIN_VARIABLE ='NIFFUSIONADO'</filter>
+            <function>ECIN_VALOR1##PUT @1 'Flag@@' @7 UME_NUMERO_ORDEN  @18'04.' @21'1.2.1.' @65 ECIN_VALOR1  @76</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="04." TareaProceso="" NumCorrel="" ElementoProceso="" RelacionUnidadMuestral="2.1.3." IDEdit="" IDAux="." InFiles="FP">
+          <name>NifAbsorbenteMuestra</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR3</table_column>
+            <filter>ECIN_VARIABLE ='NIFABSORBENTE'</filter>
+            <function>ECIN_VALOR1##PUT @1 'Flag@@' @7 UME_NUMERO_ORDEN  @18'04.' @21'2.1.3.' @65 ECIN_VALOR1  @76</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="04." TareaProceso="" NumCorrel="" ElementoProceso="" RelacionUnidadMuestral="2.2.1." IDEdit="" IDAux="." InFiles="FP">
+          <name>NifAbsorbidoMuestra</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR3</table_column>
+            <filter>ECIN_VARIABLE ='NIFABSORBIDO'</filter>
+            <function>ECIN_VALOR1##PUT @1 'Flag@@' @7 UME_NUMERO_ORDEN  @18'04.' @21'2.2.1.' @65 ECIN_VALOR1  @76</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="04." TareaProceso="" NumCorrel="" ElementoProceso="" RelacionUnidadMuestral="3.3." IDEdit="" IDAux="." InFiles="FP">
+          <name>NifsEscisionMuestra</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR3</table_column>
+            <filter>ECIN_VARIABLE ='NIFSESCISION'</filter>
+            <function>ECIN_VALOR1##PUT @1 'Flag@@' @7 UME_NUMERO_ORDEN  @18'04.' @21'3.3.  ' @65 ECIN_VALOR1  @76</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="04." TareaProceso="2.1." NumCorrel="" ElementoProceso="2.1.2.1.1." RelacionUnidadMuestral="" IDEdit="" IDAux="" InFiles="FP">
+          <name>Actividad_cambio</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="04." TareaProceso="2.1." NumCorrel="" ElementoProceso="2.1.2.1.2." RelacionUnidadMuestral="" IDEdit="" IDAux="" InFiles="FP">
+          <name>Actividad_cambio_ulocal</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="04." TareaProceso="" NumCorrel="" ElementoProceso="4.1.1." RelacionUnidadMuestral="" IDEdit="" IDAux="" InFiles="FP">
+          <name>varIncompleto</name>
+          <questionIria>
+            <table_column>WORKFLOWS_VARIABLES.WFVA_STRING</table_column>
+            <filter>WFVA_VARIABLE = 'VARINCOMPLETO'</filter>
+            <function>##PUT @1 'Flag@@' @7 UME_NUMERO_ORDEN  @18'04.' @37'4.1.1.    ' @76</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="04." TareaProceso="" NumCorrel="" ElementoProceso="4.1.2." RelacionUnidadMuestral="" IDEdit="" IDAux="" InFiles="FP">
+          <name>varIncidenciaNodoc</name>
+          <questionIria>
+            <table_column>WORKFLOWS_VARIABLES.WFVA_STRING</table_column>
+            <filter>WFVA_VARIABLE = 'VARINCIDENCIANODOC'</filter>
+            <function>##PUT @1 'Flag@@' @7 UME_NUMERO_ORDEN  @18'04.' @37'4.1.2.    ' @76</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="04." TareaProceso="" NumCorrel="" ElementoProceso="5.1.2.1." RelacionUnidadMuestral="" IDEdit="." IDAux="" InFiles="FP">
+          <name>primeraDepu</name>
+          <questionIria>
+            <table_column>Z.IRIA__EXTERNAL_ID</table_column>
+            <filter>IRIA__MOMENT='P' AND IRIA__EXTERNAL_ID IS NOT NULL</filter>
+            <function>IRIA__EXTERNAL_ID##PUT @1 'Flag@@' @7 UME_NUMERO_ORDEN  @18'04.' @37'5.1.2.1.  ' @50 IRIA__EXTERNAL_ID  @76</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="04." TareaProceso="" NumCorrel="" ElementoProceso="5.1.2.2." RelacionUnidadMuestral="" IDEdit="." IDAux="" InFiles="FP">
+          <name>ultimaDepu</name>
+          <questionIria>
+            <table_column>Z.IRIA__EXTERNAL_ID</table_column>
+            <filter>IRIA__MOMENT='U' AND IRIA__EXTERNAL_ID IS NOT NULL</filter>
+            <function>IRIA__EXTERNAL_ID##PUT @1 'Flag@@' @7 UME_NUMERO_ORDEN  @18'04.' @37'5.1.2.2.  ' @50 IRIA__EXTERNAL_ID  @76</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="04." TareaProceso="" NumCorrel="" ElementoProceso="2.2.1.1." RelacionUnidadMuestral="" IDEdit="" IDAux="" InFiles="FP">
+          <name>PresDocBajaFutura</name>
+          <questionIria>
+            <table_column>BAJAS_UM.BAUM_CON_DOCUMENTACION</table_column>
+            <filter>BAUM_FUTURA='1' AND BAUM_ESTADO='A'</filter>
+            <function>##PUT @1 'Flag@@' @7 UME_NUMERO_ORDEN  @18'04.' @37'2.2.1.1.  ' @76</function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[ 01]</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>GeoLoc</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>52</Length>
+      <InFiles>FI</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">TareaProceso</qual>
+        <qual QualOrder="4">RolProceso</qual>
+        <qual QualOrder="5">Clasificacion</qual>
+        <qual QualOrder="6">EsModif</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="4.3.3." Clasificacion="1.4.3." EsModif="" InFiles="FI">
+          <name>DireccionGestoria</name>
+          <questionIria>
+            <table_column>UME_GESTORIAS_ECONOMICAS.UMGE_DIRECCION</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="4." RolProceso="4.3.3." Clasificacion="1.4.2." EsModif="" InFiles="FI">
+          <name>codPostalGestoria</name>
+          <questionIria>
+            <table_column>UME_GESTORIAS_ECONOMICAS.UMGE_CODIGO_POSTAL</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="4.3.3." Clasificacion="1.4.1." EsModif="" InFiles="FI">
+          <name>localidadGestoria</name>
+          <questionIria>
+            <table_column>UME_GESTORIAS_ECONOMICAS.UMGE_ENTIDAD</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="4." RolProceso="4.3.3." Clasificacion="1.3.3." EsModif="" InFiles="FI">
+          <name>codMunicipioGestoria</name>
+          <questionIria>
+            <table_column>UME_GESTORIAS_ECONOMICAS.UMGE_ENTIDAD</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="4." RolProceso="4.3.3." Clasificacion="1.2.5." EsModif="" InFiles="FI">
+          <name>codProvinciaGestoria</name>
+          <questionIria>
+            <table_column>UME_GESTORIAS_ECONOMICAS.UMGE_COD_PROVINCIA</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="2.1.1." Clasificacion="1.4.3." EsModif="0" InFiles="FF,FD,FG">
+          <name>Direccion</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="2.1.1." Clasificacion="1.4.3." EsModif="1" InFiles="FF,FD,FG">
+          <name>Direccion_modif</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="2.1.2." Clasificacion="1.4.3." EsModif="0" InFiles="FF,FD,FG">
+          <name>DireccionEst</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="2.1.2." Clasificacion="1.4.3." EsModif="1" InFiles="FF,FD,FG">
+          <name>DireccionEst_modif</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="4." RolProceso="2.1.1." Clasificacion="1.2.5." EsModif="0" InFiles="FF,FD,FG">
+          <name>Codprovincia</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="4." RolProceso="2.1.1." Clasificacion="1.2.5." EsModif="1" InFiles="FF,FD,FG">
+          <name>Codprovincia_modif</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="4." RolProceso="2.1.2." Clasificacion="1.2.5." EsModif="0" InFiles="FF,FD,FG">
+          <name>CodprovinciaEst</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="4." RolProceso="2.1.2." Clasificacion="1.2.5." EsModif="1" InFiles="FF,FD,FG">
+          <name>CodprovinciaEst_modif</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="4." RolProceso="2.1.1." Clasificacion="1.3.3." EsModif="0" InFiles="FF,FD,FG">
+          <name>Codmunicipio</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="4." RolProceso="2.1.1." Clasificacion="1.3.3." EsModif="1" InFiles="FF,FD,FG">
+          <name>Codmunicipio_modif</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="4." RolProceso="2.1.2." Clasificacion="1.3.3." EsModif="0" InFiles="FF,FD,FG">
+          <name>CodmunicipioEst</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="4." RolProceso="2.1.2." Clasificacion="1.3.3." EsModif="1" InFiles="FF,FD,FG">
+          <name>CodmunicipioEst_modif</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="4." RolProceso="2.1.1." Clasificacion="1.4.2." EsModif="0" InFiles="FF,FD,FG">
+          <name>Codpostal</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="4." RolProceso="2.1.1." Clasificacion="1.4.2." EsModif="1" InFiles="FF,FD,FG">
+          <name>Codpostal_modif</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="4." RolProceso="2.1.2." Clasificacion="1.4.2." EsModif="0" InFiles="FF,FD,FG">
+          <name>CodpostalEst</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="4." RolProceso="2.1.2." Clasificacion="1.4.2." EsModif="1" InFiles="FF,FD,FG">
+          <name>CodpostalEst_modif</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="4." RolProceso="2.1.1." Clasificacion="1.2.3." EsModif="0" InFiles="FD, FG">
+          <name>CCAA</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="4." RolProceso="2.1.1." Clasificacion="1.2.3." EsModif="1" InFiles="FD, FG">
+          <name>CCAA_modif</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="4." RolProceso="2.1.2." Clasificacion="1.2.3." EsModif="0" InFiles="FF, FD, FG">
+          <name>CCAAest</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="4." RolProceso="2.1.2." Clasificacion="1.2.3." EsModif="1" InFiles="FF, FD, FG">
+          <name>CCAAest_modif</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="6." RolProceso="2.1.2." Clasificacion="1.2.3." EsModif="" InFiles="FF">
+          <name>ccaa</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="2.1.1." Clasificacion="" EsModif="0" InFiles="FF, FD, FG">
+          <name>localidad</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="2.1.1." Clasificacion="" EsModif="1" InFiles="FF, FD, FG">
+          <name>localidad_modif</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="2.1.2." Clasificacion="" EsModif="0" InFiles="FF, FD, FG">
+          <name>localidadest</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="2.1.2." Clasificacion="" EsModif="1" InFiles="FF, FD, FG">
+          <name>localidadest_modif</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>([1-9]([0-9]+)?\.)+</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>Gestoria</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>50</Length>
+      <InFiles>FI</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">TareaProceso</qual>
+        <qual QualOrder="4">RolProceso</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="4.3.3." InFiles="FI">
+          <name>NombreGestoria</name>
+          <questionIria>
+            <table_column>UME_GESTORIAS_ECONOMICAS.UMGE_NOMBRE_GESTORIA</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[.]{50}</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>NIF</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>9</Length>
+      <InFiles>FI</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">TareaProceso</qual>
+        <qual QualOrder="4">RolProceso</qual>
+        <qual QualOrder="5">EsModif</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="36." TareaProceso="4." RolProceso="2.1." EsModif="0" InFiles="FI">
+          <name>nif</name>
+          <questionIria>
+            <table_column>UM_ECONOMICAS.UMEC_CIF</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="36." TareaProceso="4." RolProceso="2.1." EsModif="1" InFiles="FI">
+          <name>nif_modif</name>
+          <questionIria>
+            <table_column>UME_MODIFICACIONES.UMGE_VALOR_NUEVO</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="36." TareaProceso="2." RolProceso="2.1." EsModif="" InFiles="FI">
+          <name>nifDirce</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[0-9]{9}([A-Z]|[0-9])</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>NIFAux</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>9</Length>
+      <InFiles>FP</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">RelacionUnidadMuestral</qual>
+        <qual QualOrder="4">NumCorrel</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="36." NumCorrel="" RelacionUnidadMuestral="7." InFiles="FP">
+          <name>NifRecogeDatos</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR1</table_column>
+            <filter>ECIN_VARIABLE ='NIFRECOGEDATOS'</filter>
+            <function>##PUT @1 'NIFAux@@' @9 UME_NUMERO_ORDEN  @20'36.' @23'7.    ' @32</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="36." NumCorrel=".." RelacionUnidadMuestral="6." InFiles="FP">
+          <name>NifCuestionarioenOtro_[n]</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR1</table_column>
+            <filter>ECIN_VARIABLE ='NIFCUESTIONARIOENOTRO'</filter>
+            <function>NumCorrel##PUT @1 'NIFAux@@' @9 UME_NUMERO_ORDEN  @20'36.' @23'6.    ' @29 NumCorrel  @32</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="36." NumCorrel="" RelacionUnidadMuestral="1.1." InFiles="FP">
+          <name>NifFusion</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR1</table_column>
+            <filter>ECIN_VARIABLE ='NIFFUSION'</filter>
+            <function>##PUT @1 'NIFAux@@' @9 UME_NUMERO_ORDEN  @20'36.' @23'1.1.  ' @32</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="36." NumCorrel=".." RelacionUnidadMuestral="1.2." InFiles="FP">
+          <name>NifFusionado_[n]</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR1</table_column>
+            <filter>ECIN_VARIABLE ='NIFFUSIONADO'</filter>
+            <function>NumCorrel##PUT @1 'NIFAux@@' @9 UME_NUMERO_ORDEN  @20'36.' @23'1.2.  ' @29 NumCorrel  @32</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="36." NumCorrel="" RelacionUnidadMuestral="2.1." InFiles="FP">
+          <name>NifAbsorbente</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR1</table_column>
+            <filter>ECIN_VARIABLE ='NIFABSORBENTE'</filter>
+            <function>##PUT @1 'NIFAux@@' @9 UME_NUMERO_ORDEN  @20'36.' @23'2.1.  ' @32</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="36." NumCorrel=".." RelacionUnidadMuestral="2.2." InFiles="FP">
+          <name>NifAbsorbido_[n]</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR1</table_column>
+            <filter>ECIN_VARIABLE ='NIFABSORBIDO'</filter>
+            <function>NumCorrel##PUT @1 'NIFAux@@' @9 UME_NUMERO_ORDEN  @20'36.' @23'2.2.  ' @29 NumCorrel  @32</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="36." NumCorrel=".." RelacionUnidadMuestral="3." InFiles="FP">
+          <name>NifsEscision_[n]</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR1</table_column>
+            <filter>ECIN_VARIABLE ='NIFSESCISION'</filter>
+            <function>NumCorrel##PUT @1 'NIFAux@@' @9 UME_NUMERO_ORDEN  @20'36.' @23'3.    ' @29 NumCorrel  @32</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="36." NumCorrel="" RelacionUnidadMuestral="11." InFiles="FP">
+          <name>nifCambioFactores</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR1</table_column>
+            <filter>ECIN_VARIABLE ='CAMBIOFACTORES'</filter>
+            <function>##PUT @1 'NIFAux@@' @9 UME_NUMERO_ORDEN  @20'36.' @23'11.   ' @32</function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[0-9]{9}([A-Z]|[0-9])</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>NOrdenAux</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>11</Length>
+      <InFiles>FP</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">RelacionUnidadMuestral</qual>
+        <qual QualOrder="4">NumCorrel</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="05." NumCorrel="" RelacionUnidadMuestral="8." InFiles="FP">
+          <name>NordenDuplicado</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR1</table_column>
+            <filter>ECIN_VARIABLE ='NORDENDUPLICADO'</filter>
+            <function>##PUT @1 'NOrdenAux@@' @12 UME_NUMERO_ORDEN  @23'05.' @26'8.    ' @35</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="05." NumCorrel="" RelacionUnidadMuestral="7." InFiles="FP">
+          <name>NordenRecogeDatos</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR1</table_column>
+            <filter>ECIN_VARIABLE ='NORDENRECOGEDATOS '</filter>
+            <function>##PUT @1 'NOrdenAux@@' @12 UME_NUMERO_ORDEN  @23'05.' @26'7.    ' @35</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="05." NumCorrel=".." RelacionUnidadMuestral="6." InFiles="FP">
+          <name>NordenCuestionarioenOtro_[n]</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR1</table_column>
+            <filter>ECIN_VARIABLE ='NIFCUESTIONARIOENOTRO'</filter>
+            <function>NumCorrel##PUT @1 'NOrdenAux@@' @12 UME_NUMERO_ORDEN  @23'05.' @26'6.    ' @32 NumCorrel  @35</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="05." NumCorrel="" RelacionUnidadMuestral="9." InFiles="FP">
+          <name>NordenCambioUnidadLocal</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR1</table_column>
+            <filter>ECIN_VARIABLE ='NORDENCAMBIOUNIDADLOCAL'</filter>
+            <function>##PUT @1 'NOrdenAux@@' @12 UME_NUMERO_ORDEN  @23'05.' @26'9.    ' @35</function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[0-9]{9}(T|[0-9])P</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>NOrdenICN</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>11</Length>
+      <InFiles>FF</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="05." InFiles="FF">
+          <name>numidest</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[0-9]{9}(T|[0-9])P</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>Nombre</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>25</Length>
+      <InFiles>FI</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">TareaProceso</qual>
+        <qual QualOrder="4">RolProceso</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="4.3.1." InFiles="FI">
+          <name>NombreInforEnt</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_NOMBRE</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="4.3.2." InFiles="FI">
+          <name>NombreInforEnv</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_NOMBRE</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="4.3.3." InFiles="FI">
+          <name>NombreInforGestoria</name>
+          <questionIria>
+            <table_column>UME_GESTORIAS_ECONOMICAS.UMGE_NOMBRE</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="4.3.4." InFiles="FI">
+          <name>NombreInforCoor</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_NOMBRE</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[.]{50}</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>Observ</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>1000</Length>
+      <InFiles>FP</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">Usuario</qual>
+        <qual QualOrder="4">TareaProceso</qual>
+        <qual QualOrder="5">ElementoProceso</qual>
+        <qual QualOrder="6">IDEdit</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="" ElementoProceso="5.1.2.1." Usuario="" IDEdit="." InFiles="FP">
+          <name>observacionesPrimDepuracionError</name>
+          <questionIria>
+            <table_column>Z.IRIA__COMMENT</table_column>
+            <filter>IRIA__MOMENT='P' AND IRIA__EXTERNAL_ID IS NOT NULL AND IRIA__COMMENT IS NOT NULL</filter>
+            <function>IRIA__EXTERNAL_ID##PUT @1 'Observ@@' @9 UME_NUMERO_ORDEN  @20'06.' @40'5.1.2.1.  ' @50 IRIA__EXTERNAL_ID  @65</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="" ElementoProceso="5.1.2.2." Usuario="" IDEdit="." InFiles="FP">
+          <name>observacionesUltimDepuracionError</name>
+          <questionIria>
+            <table_column>Z.IRIA__COMMENT</table_column>
+            <filter>IRIA__MOMENT='U' AND IRIA__EXTERNAL_ID IS NOT NULL AND IRIA__COMMENT IS NOT NULL</filter>
+            <function>IRIA__EXTERNAL_ID##PUT @1 'Observ@@' @9 UME_NUMERO_ORDEN  @20'06.' @40'5.1.2.2.  ' @50 IRIA__EXTERNAL_ID  @65</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="" ElementoProceso="3.1." Usuario="." IDEdit="" InFiles="FP">
+          <name>ObservacionesUME</name>
+          <questionIria>
+            <table_column>UME_OBSERVACIONES.UMOB_OBSERVACION</table_column>
+            <filter></filter>
+            <function>USUI_UID##PUT @1 'Observ@@' @9 UME_NUMERO_ORDEN  @20'06.' @23 USUI_UID  @40'3.1.      ' @65</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4.1.4." ElementoProceso="" Usuario="" IDEdit="" InFiles="FP">
+          <name>observacionesIncidencia</name>
+          <questionIria>
+            <table_column>WORKFLOWS_VARIABLES.WFVA_STRING</table_column>
+            <filter>WFVA_VARIABLE = 'OBSERVACIONESINCIDENCIA'</filter>
+            <function>##PUT @1 'Observ@@' @9 UME_NUMERO_ORDEN  @20'06.' @30'4.1.4.    ' @65</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="5.1." ElementoProceso="" Usuario="" IDEdit="" InFiles="FP">
+          <name>observacionesDepuracion</name>
+          <questionIria>
+            <table_column>WORKFLOWS_VARIABLES.WFVA_STRING</table_column>
+            <filter>WFVA_VARIABLE = 'OBSERVACIONESDEPURACION'</filter>
+            <function>##PUT @1 'Observ@@' @9 UME_NUMERO_ORDEN  @20'06.' @30'5.1.      ' @65</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="5.2." ElementoProceso="" Usuario="" IDEdit="" InFiles="FP">
+          <name>observacionesDepSelectiva</name>
+          <questionIria>
+            <table_column>WORKFLOWS_VARIABLES.WFVA_STRING</table_column>
+            <filter>WFVA_VARIABLE = 'OBSERVACIONESDEPSELECTIVA'</filter>
+            <function>##PUT @1 'Observ@@' @9 UME_NUMERO_ORDEN  @20'06.' @30'5.2.      ' @65</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4.4.1." ElementoProceso="" Usuario="" IDEdit="" InFiles="FP">
+          <name>observacionesInspeccion</name>
+          <questionIria>
+            <table_column>WORKFLOWS_VARIABLES.WFVA_STRING</table_column>
+            <filter>WFVA_VARIABLE = 'OBSERVACIONESINSPECCION'</filter>
+            <function>##PUT @1 'Observ@@' @9 UME_NUMERO_ORDEN  @20'06.' @30'4.4.1.    ' @65</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4.4.2." ElementoProceso="" Usuario="" IDEdit="" InFiles="FP">
+          <name>observacionesInspeccionDepSelectiva</name>
+          <questionIria>
+            <table_column>WORKFLOWS_VARIABLES.WFVA_STRING</table_column>
+            <filter>WFVA_VARIABLE = 'OBSERVACIONESINSPECCIONDEPSELECTIVA'</filter>
+            <function>##PUT @1 'Observ@@' @9 UME_NUMERO_ORDEN  @20'06.' @30'4.4.2.    ' @65</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4.6.1." ElementoProceso="" Usuario="" IDEdit="" InFiles="FP">
+          <name>observacionesSupervision</name>
+          <questionIria>
+            <table_column>WORKFLOWS_VARIABLES.WFVA_STRING</table_column>
+            <filter>WFVA_VARIABLE = 'OBSERVACIONESSUPERVISION'</filter>
+            <function>##PUT @1 'Observ@@' @9 UME_NUMERO_ORDEN  @20'06.' @30'4.6.1.    ' @65</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4.6.2." ElementoProceso="" Usuario="" IDEdit="" InFiles="FP">
+          <name>observacionesSupervisionDepSelectiva</name>
+          <questionIria>
+            <table_column>WORKFLOWS_VARIABLES.WFVA_STRING</table_column>
+            <filter>WFVA_VARIABLE = 'OBSERVACIONESSUPERVISIONDEPSELECTIVA'</filter>
+            <function>##PUT @1 'Observ@@' @9 UME_NUMERO_ORDEN  @20'06.' @30'4.6.2.    ' @65</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4.1." ElementoProceso="" Usuario="." IDEdit="" InFiles="FP">
+          <name>observacionesGestion</name>
+          <questionIria>
+            <table_column>GESTIONES_OBSERVACIONES.GEOB_OBSERVACION</table_column>
+            <filter></filter>
+            <function>USUI_UID##PUT @1 'Observ@@' @9 UME_NUMERO_ORDEN  @20'06.' @23 USUI_UID  @30'4.1.      ' @65</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="" ElementoProceso="4.1.1." Usuario="" IDEdit="" InFiles="FP">
+          <name>observacionesIncompleto</name>
+          <questionIria>
+            <table_column>WORKFLOWS_VARIABLES.WFVA_STRING</table_column>
+            <filter>WFVA_VARIABLE = 'OBSERVACIONESINCOMPLETO'</filter>
+            <function>##PUT @1 'Observ@@' @9 UME_NUMERO_ORDEN  @20'06.' @40'4.1.1.    ' @65</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="" ElementoProceso="2.2.1." Usuario="" IDEdit="" InFiles="FP">
+          <name>ObservacionesBajaFutura</name>
+          <questionIria>
+            <table_column>BAJAS_UM.BAUM_COMENTARIOS</table_column>
+            <filter>BAUM_FUTURA='1' AND BAUM_ESTADO='A'</filter>
+            <function>##PUT @1 'Observ@@' @9 UME_NUMERO_ORDEN  @20'06.' @40'2.2.1.    ' @65</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="6." ElementoProceso="" Usuario="" IDEdit="" InFiles="FF">
+          <name>observa</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[.]+</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>Parametro</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>1</Length>
+      <InFiles>FL</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">ElementoProceso</qual>
+        <qual QualOrder="4">IDEdit</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="35." ElementoProceso="5.1.1.2." IDEdit="." InFiles="FL">
+          <name>Condicion</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." ElementoProceso="5.1.1.3." IDEdit="." InFiles="FL">
+          <name>LimInf</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." ElementoProceso="5.1.1.4." IDEdit="." InFiles="FL">
+          <name>LimSup</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." ElementoProceso="5.1.1.5." IDEdit="" InFiles="FT">
+          <name>CuantPeso</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." ElementoProceso="5.1.1.6." IDEdit="" InFiles="FT">
+          <name>CuantGlob</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." ElementoProceso="5.1.1.7." IDEdit="." InFiles="FT">
+          <name>STDErrorPred</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." ElementoProceso="5.1.1.8." IDEdit="." InFiles="FT">
+          <name>STDErrorObs</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." ElementoProceso="5.1.1.9." IDEdit="." InFiles="FT">
+          <name>CuantMom</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." ElementoProceso="5.1.1.10." IDEdit="." InFiles="FT">
+          <name>PredValue</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." ElementoProceso="5.1.1.11." IDEdit="." InFiles="FT">
+          <name>ProbError</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." ElementoProceso="5.1.1.12." IDEdit="." InFiles="FL">
+          <name>HRFactor</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[0-9]</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>Passwd</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>8</Length>
+      <InFiles>FP</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="06." InFiles="FP">
+          <name>password</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[.]+</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>Pond</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>NUMBER</varType>
+      <Length>9</Length>
+      <InFiles>FF</InFiles>
+      <quals>
+        <qual QualOrder="1">PondCCAA</qual>
+        <qual QualOrder="2">PondDivSubdivCNAE09</qual>
+        <qual QualOrder="3">TipoMicrodato</qual>
+        <qual QualOrder="4">PondAgreg</qual>
+        <qual QualOrder="5">TipoMercado</qual>
+      </quals>
+      <UnitNames>
+        <UnitName TipoMicrodato="17." TipoMercado="1." PondCCAA="." PondDivSubdivCNAE09="." PondAgreg="CifraNeg" InFiles="FF">
+          <name>PONMI</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName TipoMicrodato="17." TipoMercado="2.1.1." PondCCAA="." PondDivSubdivCNAE09="." PondAgreg="CifraNeg" InFiles="FF">
+          <name>PONZE</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName TipoMicrodato="17." TipoMercado="2.1.2." PondCCAA="." PondDivSubdivCNAE09="." PondAgreg="CifraNeg" InFiles="FF">
+          <name>PONZNE</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName TipoMicrodato="17." TipoMercado="2.2." PondCCAA="." PondDivSubdivCNAE09="." PondAgreg="CifraNeg" InFiles="FF">
+          <name>PONRM</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>( |[0-9]{1,9})</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>RazonSoc</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>55</Length>
+      <InFiles>FI</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">TareaProceso</qual>
+        <qual QualOrder="4">RolProceso</qual>
+        <qual QualOrder="5">EsModif</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="2.1." EsModif="0" InFiles="FI">
+          <name>razonSocial</name>
+          <questionIria>
+            <table_column>UM_ECONOMICAS.UMEC_RAZON_SOCIAL</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="2.1." EsModif="1" InFiles="FI">
+          <name>razonSocial_modif</name>
+          <questionIria>
+            <table_column>UME_MODIFICACIONES.UMGE_VALOR_NUEVO</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="2." RolProceso="2.1." EsModif="" InFiles="FI">
+          <name>razonSocialDirce</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[.]{100}</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>RazonSocAux</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>55</Length>
+      <InFiles>FP</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">RelacionUnidadMuestral</qual>
+        <qual QualOrder="4">IDAux</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="06." RelacionUnidadMuestral="1.1." IDAux="" InFiles="FP">
+          <name>NifFusionEmpre</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR2</table_column>
+            <filter>ECIN_VARIABLE ='NIFFUSION'</filter>
+            <function>##PUT @1 'RazonSocAux@@' @14 UME_NUMERO_ORDEN  @25'06.' @28'1.1.  ' @45</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." RelacionUnidadMuestral="1.2." IDAux="." InFiles="FP">
+          <name>NifFusionadoEmpre</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR2</table_column>
+            <filter>ECIN_VARIABLE ='NIFFUSIONADO'</filter>
+            <function>ECIN_VALOR1##PUT @1 'RazonSocAux@@' @14 UME_NUMERO_ORDEN  @25'06.' @28'1.2.  ' @34 ECIN_VALOR1  @45</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." RelacionUnidadMuestral="2.1." IDAux="." InFiles="FP">
+          <name>NifAbsorbenteEmpre</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR2</table_column>
+            <filter>ECIN_VARIABLE ='NIFABSORBENTE'</filter>
+            <function>ECIN_VALOR1##PUT @1 'RazonSocAux@@' @14 UME_NUMERO_ORDEN  @25'06.' @28'2.1.  ' @34 ECIN_VALOR1  @45</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." RelacionUnidadMuestral="2.2." IDAux="." InFiles="FP">
+          <name>NifAbsorbidoEmpre</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR2</table_column>
+            <filter>ECIN_VARIABLE ='NIFABSORBIDO'</filter>
+            <function>ECIN_VALOR1##PUT @1 'RazonSocAux@@' @14 UME_NUMERO_ORDEN  @25'06.' @28'2.2.  ' @34 ECIN_VALOR1  @45</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." RelacionUnidadMuestral="3." IDAux="." InFiles="FP">
+          <name>NifsEscisionEmpre</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR2</table_column>
+            <filter>ECIN_VARIABLE ='NIFSESCISION'</filter>
+            <function>ECIN_VALOR1##PUT @1 'RazonSocAux@@' @14 UME_NUMERO_ORDEN  @25'06.' @28'3.    ' @34 ECIN_VALOR1  @45</function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." RelacionUnidadMuestral="11." IDAux="" InFiles="FP">
+          <name>nifCambioFactoresEmpre</name>
+          <questionIria>
+            <table_column>ECON_INCIDENCIAS.ECIN_VALOR2</table_column>
+            <filter>ECIN_VARIABLE ='CAMBIOFACTORES'</filter>
+            <function>##PUT @1 'RazonSocAux@@' @14 UME_NUMERO_ORDEN  @25'06.' @28'11.   ' @45</function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[.]{100}</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>Tame</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>2</Length>
+      <InFiles>FF,FD,FG</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">TareaProceso</qual>
+        <qual QualOrder="4">RolProceso</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="2." RolProceso="2.1.1." InFiles="FF,FD,FG">
+          <name>CodTame</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="35." TareaProceso="2." RolProceso="2.1.2." InFiles="FF,FD,FG">
+          <name>CodTameEst</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>( |[0-9]{2})</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>Telefono</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>9</Length>
+      <InFiles>FI</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">TareaProceso</qual>
+        <qual QualOrder="4">RolProceso</qual>
+        <qual QualOrder="5">NumCorrel</qual>
+        <qual QualOrder="6">EsModif</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." RolProceso="2.1." NumCorrel="1" EsModif="0" InFiles="FI">
+          <name>telefono1</name>
+          <questionIria>
+            <table_column>UM_INTERLOCUTORES_ECONOMICAS.UMIE_TELEFONO1</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." RolProceso="2.1." NumCorrel="2" EsModif="0" InFiles="FI">
+          <name>telefono2</name>
+          <questionIria>
+            <table_column>UM_INTERLOCUTORES_ECONOMICAS.UMIE_TELEFONO2</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." RolProceso="2.1." NumCorrel="3" EsModif="0" InFiles="FI">
+          <name>telefono3</name>
+          <questionIria>
+            <table_column>UM_INTERLOCUTORES_ECONOMICAS.UMIE_TELEFONO3</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." RolProceso="2.1." NumCorrel="1" EsModif="1" InFiles="FI">
+          <name>telefono1_modif</name>
+          <questionIria>
+            <table_column>UME_MODIFICACIONES.UMGE_VALOR_NUEVO</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." RolProceso="2.1." NumCorrel="2" EsModif="1" InFiles="FI">
+          <name>telefono2_modif</name>
+          <questionIria>
+            <table_column>UME_MODIFICACIONES.UMGE_VALOR_NUEVO</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." RolProceso="2.1." NumCorrel="3" EsModif="1" InFiles="FI">
+          <name>telefono3_modif</name>
+          <questionIria>
+            <table_column>UME_MODIFICACIONES.UMGE_VALOR_NUEVO</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." RolProceso="4.3.1." NumCorrel="1" EsModif="" InFiles="FI">
+          <name>TelefonoInfor1Ent</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_TELEFONO1</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." RolProceso="4.3.2." NumCorrel="1" EsModif="" InFiles="FI">
+          <name>TelefonoInfor1Env</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_TELEFONO1</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." RolProceso="4.3.3." NumCorrel="1" EsModif="" InFiles="FI">
+          <name>TelefonoInfor1Gestoria</name>
+          <questionIria>
+            <table_column>UME_GESTORIAS_ECONOMICAS.UMGE_TELEFONO1</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." RolProceso="4.3.1." NumCorrel="2" EsModif="" InFiles="FI">
+          <name>TelefonoInfor2Ent</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_TELEFONO2</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." RolProceso="4.3.2." NumCorrel="2" EsModif="" InFiles="FI">
+          <name>TelefonoInfor2Env</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_TELEFONO2</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." RolProceso="4.3.3." NumCorrel="2" EsModif="" InFiles="FI">
+          <name>TelefonoInfor2Gestoria</name>
+          <questionIria>
+            <table_column>UME_GESTORIAS_ECONOMICAS.UMGE_TELEFONO2</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." RolProceso="4.3.1." NumCorrel="3" EsModif="" InFiles="FI">
+          <name>TelefonoInfor3Ent</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_TELEFONO3</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." RolProceso="4.3.2." NumCorrel="3" EsModif="" InFiles="FI">
+          <name>TelefonoInfor3Env</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_TELEFONO3</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." RolProceso="4.3.3." NumCorrel="3" EsModif="" InFiles="FI">
+          <name>TelefonoInfor3Gestoria</name>
+          <questionIria>
+            <table_column>UME_GESTORIAS_ECONOMICAS.UMGE_TELEFONO3</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." RolProceso="4.3.4." NumCorrel="1" EsModif="" InFiles="FI">
+          <name>TelefonoInfor1Coor</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_TELEFONO1</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." RolProceso="4.3.4." NumCorrel="2" EsModif="" InFiles="FI">
+          <name>TelefonoInfor2Coor</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_TELEFONO2</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4." RolProceso="4.3.4." NumCorrel="3" EsModif="" InFiles="FI">
+          <name>TelefonoInfor3Coor</name>
+          <questionIria>
+            <table_column>INFORMANTES.INFO_TELEFONO3</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[69][0-9]{8}</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>TiempoEjec</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>5</Length>
+      <InFiles>FP</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">TareaProceso</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4.3." InFiles="FP">
+          <name>NsegundosGrabacion</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="5." InFiles="FP">
+          <name>NsegundosDepuracion</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4.4.1." InFiles="FP">
+          <name>NsegundosInspeccion</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="07." TareaProceso="4.4.2." InFiles="FP">
+          <name>NsegundosInspeccionDepSelectiva</name>
+          <questionIria>
+            <table_column></table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>( |[0-9]{4})</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>URL</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>100</Length>
+      <InFiles>FI</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+        <qual QualOrder="3">TareaProceso</qual>
+        <qual QualOrder="4">RolProceso</qual>
+        <qual QualOrder="5">EsModif</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="2.1." EsModif="0" InFiles="FI">
+          <name>url</name>
+          <questionIria>
+            <table_column>UM_ECONOMICAS.UMEC_URL</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+        <UnitName NOrden="." TipoMicrodato="06." TareaProceso="4." RolProceso="2.1." EsModif="1" InFiles="FI">
+          <name>url_modif</name>
+          <questionIria>
+            <table_column>UME_MODIFICACIONES.UMGE_VALOR_NUEVO</table_column>
+            <filter></filter>
+            <function></function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[.]{100}</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>UnidadRecog</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>5</Length>
+      <InFiles>FP</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="35." InFiles="FP">
+          <name>codUGestion</name>
+          <questionIria>
+            <table_column>ASIG_UMES_UR_CUES.UREC_CODIGO</table_column>
+            <filter></filter>
+            <function>##PUT @1 'UnidadRecog@@' @14 UME_NUMERO_ORDEN  @25'35.' @28</function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>( |[A-Z0-9]{1,3})</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>varGestion</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>2</Length>
+      <InFiles>FP</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="35." InFiles="FP">
+          <name>varGestion</name>
+          <questionIria>
+            <table_column>WORKFLOWS_VARIABLES.WFVA_STRING</table_column>
+            <filter>WFVA_VARIABLE = 'VARGESTION'</filter>
+            <function>##PUT @1 'varGestion@@' @13 UME_NUMERO_ORDEN  @24'35.' @27</function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[A-Z]{2}</value>
+      </values>
+    </identifier>
+    <identifier identifierType="V">
+      <name>varGestionFutura</name>
+      <description>
+        <MetadataCode></MetadataCode>
+      </description>
+      <varType>STRING</varType>
+      <Length>2</Length>
+      <InFiles>FP</InFiles>
+      <quals>
+        <qual QualOrder="1">NOrden</qual>
+        <qual QualOrder="2">TipoMicrodato</qual>
+      </quals>
+      <UnitNames>
+        <UnitName NOrden="." TipoMicrodato="35." InFiles="FP">
+          <name>varGestionFutura</name>
+          <questionIria>
+            <table_column>BAJAS_UM.BAUM_CAUSA</table_column>
+            <filter>BAUM_FUTURA='1' AND BAUM_ESTADO='A'</filter>
+            <function>##PUT @1 'varGestionFutura@@' @19 UME_NUMERO_ORDEN  @30'35.' @33</function>
+          </questionIria>
+        </UnitName>
+      </UnitNames>
+      <values>
+        <description></description>
+        <value>[A-Z]{2}</value>
+      </values>
+    </identifier>
+  </identifiers>
+</DD>

@@ -1,0 +1,4 @@
+in0 = General
+in2ca = CCAA
+in1 = B y C
+in2m = MIGs
