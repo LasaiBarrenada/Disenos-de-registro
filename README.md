@@ -10,3 +10,6 @@ El repositorio cuenta con diferentes carpetas:
     4. **Figuras_EnvioN**: Script para la obtencion de las figuras presentadas en el TFM
     5. _CNAEMIG y CodeManagement_: Script para la creacion de diferentes variables derivadas
 3. **Imagenes**: Imágenes de los gráficos presentados en el TFM en formato PDF y resolución óptima
+
+
+Los datos necesarios para obtener los resultados no estan incluido debido a que son material protegido por secreto estadistico. 
