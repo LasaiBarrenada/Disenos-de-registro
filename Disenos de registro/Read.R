@@ -77,8 +77,18 @@ data_PGR_total <- rbind(data_PGR_st1,data_PGR_st2, data_PGR_st3)
 
 fastReadfwf::validateValues(data_PGR_total, stSchema_PGR)
 
+
+
+dataenvio1 <- data_PGR_total[envioPGR == "01"]
+dataenvio1 <- dataenvio1[,!duplicated(dataenvio1$NUMIDEST)]
+dataenvio1PID <- data_PID_total[envioPID == "01"]
+
+
+
+
 dataenvio2 <- unique(data_PGR_total[envioPGR != "03"])
 dataenvio2PID <-  unique(data_PID_total[envioPID != "03"])
+
 
 duplicadas = duplicated(dataenvio2$NUMIDEST)
 dataenvio2duplicadas <- dataenvio2[duplicadas]
@@ -89,20 +99,35 @@ envio2finalPGR <- rbind(dataenvio2unicas,envio2añadir)
 #1522 en el pGR observaciones en el envio 2
 
 
-duplicadasPID = duplicated(dataenvio2PID$NUMIDEST)
+duplicadasPID = duplicated(dataenvio2PID$numidest)
 dataenvio2duplicadasPID <- dataenvio2PID[duplicadasPID]
+numidestrepes<- dataenvio2duplicadasPID$numidest
+datanorepesPID2 <- dataenvio2PID[!numidest %in% numidestrepes]
 envio2añadirPID <- dataenvio2duplicadasPID[ envioPID== "02"]
-dataenvio2PIDunicas <- dataenvio2PID[!duplicadasPID]
-envio2finalPID <- dataenvio2PID
+
+envio2finalPID <- rbind(datanorepesPID2,envio2añadirPID)
 envio2finalPID[envioPID == "02"]
 
 #1678 en pid ENVIO 2
 
-dataenvio3PID <- data_PID_total 
+dataenvio3PID <- data_PID_total
+duplicadasPID = duplicated(dataenvio3PID$numidest)
+dataenvio3duplicadasPID <- dataenvio3PID[duplicadasPID]
+numidestrepes<- dataenvio3duplicadasPID$numidest
+datanorepesPID3 <- dataenvio3PID[!numidest %in% numidestrepes]
+
+
+envio3añadirPID <- dataenvio3duplicadasPID[ envioPID== "03"]
+
+envio3finalPID <- rbind(datanorepesPID3,envio3añadirPID, envio2añadirPID)
+envio3finalPID[envioPID == "03"]
+
+
 dataenvio3PGR <-data_PGR_total
+
+
 duplicadasPGR = duplicated(dataenvio3PGR$NUMIDEST)
 dataenvio3duplicadasPGR <- dataenvio3PGR[duplicadasPGR]
 envio3añadir <- dataenvio3duplicadasPGR[ envioPGR== "03"]
 dataenvio3unicas <- dataenvio3PGR[!duplicadasPGR]
 envio3finalPGR <- rbind(dataenvio3unicas,envio3añadir)
-envio3finalPID <- dataenvio3PID
